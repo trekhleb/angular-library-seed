@@ -16,6 +16,10 @@
     "types": [
       "jasmine",
       "node"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
     ]
   }
 }

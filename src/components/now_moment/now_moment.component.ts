@@ -4,8 +4,6 @@ import {
   Input
 } from '@angular/core';
 
-import { setInterval } from 'timers';
-
 import * as moment from 'moment';
 
 /**
@@ -43,7 +41,7 @@ export class NowMomentComponent implements OnInit {
    * Component init event handler.
    */
   public  ngOnInit(): void {
-    setInterval(this.setNow, this.nowInterval);
+    this.setNow();
   }
 
   /**
