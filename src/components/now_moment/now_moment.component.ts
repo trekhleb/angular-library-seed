@@ -31,13 +31,6 @@ export class NowMomentComponent implements OnInit {
   @Input() public nowFormat: string = 'dddd, MMMM Do YYYY, h:mm:ss a';
 
   /**
-   * Data update frequency in ms.
-   *
-   * @type {number}
-   */
-  @Input() public nowInterval: number = 1000;
-
-  /**
    * Component init event handler.
    */
   public  ngOnInit(): void {
