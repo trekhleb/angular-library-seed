@@ -26,7 +26,6 @@ export class NowMomentComponent implements OnInit {
    * Date format.
    *
    * @see https://momentjs.com/docs/#/displaying/format/
-   * @type {string}
    */
   @Input() public nowFormat: string = 'dddd, MMMM Do YYYY, h:mm:ss a';
 
