@@ -16,7 +16,7 @@ module.exports = {
    * @see: http://webpack.github.io/docs/configuration.html#entry
    */
   entry: {
-    main: './src/index'
+    main: './index'
   },
 
   /**
