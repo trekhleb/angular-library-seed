@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { MomentComponent } from './components';
+import { NowMomentComponent } from './components';
 
 /**
  * NgLibraryStarterModule module.
@@ -8,11 +8,12 @@ import { MomentComponent } from './components';
 @NgModule({
   // The view classes that belong to this module.
   declarations: [
-    MomentComponent,
+    NowMomentComponent,
   ],
-  // The subset of declarations that should be visible and usable in the components templates of other modules.
+  // The subset of declarations that should be visible and usable
+  // in the components templates of other modules.
   exports: [
-    MomentComponent,
+    NowMomentComponent,
   ]
 })
 export class NgLibraryStarterModule {

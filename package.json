@@ -1,16 +1,18 @@
 {
   "name": "ng-library-starter",
   "version": "0.0.1",
-  "description": "Angular library starter with AOT compilation, Typescript, Webpack, Karma test, vendors dependency and SCSS compilation",
+  "description": "Angular library starter with AOT compilation, Codelyzer, Typescript, Webpack, Karma test, vendors dependency and SCSS compilation",
   "main": "bundles/ng-library-starter.umd.js",
   "module": "index.js",
   "scripts": {
     "build": "node build.js",
-    "test": "karma start",
+    "compodoc": "compodoc -p tsconfig.json",
+    "compodoc-serve": "compodoc -s",
+    "lint": "npm run tslint \"src/**/*.ts\" -t verbose",
     "pack-lib": "npm pack ./dist",
     "publish-lib": "npm publish ./dist",
-    "compodoc": "compodoc -p tsconfig.json",
-    "compodoc-serve": "compodoc -s"
+    "test": "karma start",
+    "tslint": "tslint"
   },
   "typings": "index.d.ts",
   "author": "Oleksii Trekhleb",

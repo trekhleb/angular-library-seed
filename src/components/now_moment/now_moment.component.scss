@@ -1,0 +1,10 @@
+$now-moment-font-size: 18px;
+$now-moment-font-color: black;
+
+// Moment page styles.
+.now-moment-wrapper {
+  .now-moment-date {
+    font-size: $now-moment-font-size;
+    color: $now-moment-font-color;
+  }
+}

@@ -4,21 +4,21 @@ import {
   Input
 } from '@angular/core';
 
-import { setInterval } from "timers";
+import { setInterval } from 'timers';
 
-const moment = require('moment');
+import * as moment from 'moment';
 
 /**
  * Moment component.
  */
 @Component({
-  selector: 'moment',
-  templateUrl: './moment.component.html',
+  selector: 'now-moment',
+  templateUrl: 'now_moment.component.html',
   styles: [
-    require('./moment.component.scss').toString()
+    require('./now_moment.component.scss').toString()
   ]
 })
-export class MomentComponent implements OnInit {
+export class NowMomentComponent implements OnInit {
   /**
    * The "now" string holder.
    */
