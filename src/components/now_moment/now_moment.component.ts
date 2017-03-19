@@ -30,19 +30,19 @@ export class NowMomentComponent implements OnInit {
    * @see https://momentjs.com/docs/#/displaying/format/
    * @type {string}
    */
-  @Input public nowFormat: string = 'dddd, MMMM Do YYYY, h:mm:ss a';
+  @Input() public nowFormat: string = 'dddd, MMMM Do YYYY, h:mm:ss a';
 
   /**
    * Data update frequency in ms.
    *
    * @type {number}
    */
-  @Input public nowInterval: number = 1000;
+  @Input() public nowInterval: number = 1000;
 
   /**
    * Component init event handler.
    */
-  protected  ngOnInit(): void {
+  public  ngOnInit(): void {
     setInterval(this.setNow, this.nowInterval);
   }
 
