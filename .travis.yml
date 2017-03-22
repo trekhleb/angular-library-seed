@@ -8,10 +8,13 @@ addons:
       - google-chrome-stable
 language: node_js
 node_js:
-  - "node"
-  - "7"
+  - stable
 script:
   - npm run ci:travis
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3
 cache:
   yarn: true
 notifications:
