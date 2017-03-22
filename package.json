@@ -13,7 +13,8 @@
     "pack-lib": "npm pack ./dist",
     "publish-lib": "npm publish ./dist",
     "test": "karma start",
-    "tslint": "tslint"
+    "tslint": "tslint",
+    "ci:travis": "npm run lint && npm run test"
   },
   "typings": "index.d.ts",
   "author": "Oleksii Trekhleb",

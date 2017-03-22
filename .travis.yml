@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "node"
+  - "7"
+
+script:
+  - npm run ci:travis
+
+cache:
+  yarn: true
+
+notifications:
+  email: true
