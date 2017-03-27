@@ -11,10 +11,8 @@ import * as moment from 'moment';
  */
 @Component({
   selector: 'now-moment',
-  templateUrl: 'now_moment.component.html',
-  styles: [
-    require('./now_moment.component.scss').toString()
-  ]
+  templateUrl: './now_moment.component.html',
+  styleUrls: ['./now_moment.component.scss']
 })
 export class NowMomentComponent implements OnInit {
   /**
