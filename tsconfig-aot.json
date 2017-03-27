@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2015",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "noEmit": false,
+    "noEmitHelpers": false,
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "removeComments": false,
+    "outDir": "./compiled",
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./compiled",
+    "skipTemplateCodegen": false,
+    "strictMetadataEmit": true,
+    "skipMetadataEmit" : true
+  }
+}

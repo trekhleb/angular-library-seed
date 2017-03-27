@@ -5,9 +5,11 @@
   "main": "bundles/ng-library-starter.umd.js",
   "module": "index.js",
   "scripts": {
-    "build:esm": "tsc --project tsconfig-esm.json",
+    "build:esm": "npm run rimraf -- dist/esm && tsc --project tsconfig-esm.json",
+    "build:aot": "npm run rimraf -- compiled && npm run ngc -- --project tsconfig-aot.json",
+    "ngc": "node_modules/.bin/ngc",
     "build": "node build.js",
-    "clean": "npm cache clean && npm run rimraf -- node_modules dist doc documentation coverage",
+    "clean": "npm cache clean && npm run rimraf -- node_modules dist compiled doc documentation coverage",
     "rimraf": "rimraf",
     "docs": "compodoc -p tsconfig.json",
     "lint": "npm run tslint \"src/**/*.ts\" -t verbose",
