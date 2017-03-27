@@ -5,6 +5,7 @@
   "main": "bundles/ng-library-starter.umd.js",
   "module": "index.js",
   "scripts": {
+    "build:esm": "tsc --project tsconfig-esm.json",
     "build": "node build.js",
     "clean": "npm cache clean && npm run rimraf -- node_modules dist doc documentation coverage",
     "rimraf": "rimraf",
