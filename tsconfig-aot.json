@@ -28,6 +28,6 @@
     "genDir": "./compiled",
     "skipTemplateCodegen": false,
     "strictMetadataEmit": true,
-    "skipMetadataEmit" : true
+    "skipMetadataEmit" : false
   }
 }
