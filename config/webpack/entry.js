@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @see https://webpack.js.org/configuration/entry-context/#entry
  */
