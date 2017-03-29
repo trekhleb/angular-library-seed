@@ -63,7 +63,6 @@
     "compodoc": "0.0.41",
     "core-js": "2.4.1",
     "css-loader": "^0.26.0",
-    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.0",
     "html-loader": "^0.4.3",
     "istanbul-instrumenter-loader": "1.2.0",

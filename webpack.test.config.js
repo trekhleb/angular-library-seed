@@ -6,11 +6,6 @@ let path = require('path');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 
-/**
- * Webpack configuration.
- *
- * @see: http://webpack.github.io/docs/configuration.html#cli
- */
 module.exports = {
 
   /**
@@ -21,19 +16,7 @@ module.exports = {
    */
   devtool: 'inline-source-map',
 
-  /**
-   * Options affecting the resolving of modules.
-   *
-   * @see: http://webpack.github.io/docs/configuration.html#resolve
-   */
-  resolve: {
-    /**
-     * An array of extensions that should be used to resolve modules.
-     *
-     * @see: http://webpack.github.io/docs/configuration.html#resolve-extensions
-     */
-    extensions: ['.ts', '.js']
-  },
+  resolve: require('./config/webpack/resolve'),
 
   /**
    * Options affecting the normal modules.
@@ -198,13 +181,5 @@ module.exports = {
 
   ],
 
-  /**
-   * Disable performance hints
-   *
-   * @see: https://github.com/a-tarasyuk/rr-boilerplate/blob/master/webpack/dev.config.babel.js#L41
-   */
-  performance: {
-    hints: false
-  }
-
+  performance: require('./config/webpack/performance')
 };
