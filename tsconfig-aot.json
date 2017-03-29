@@ -4,6 +4,7 @@
     "module": "ES2015",
     "baseUrl": ".",
     "rootDir": ".",
+    "outDir": "./compiled",
     "noEmit": false,
     "noEmitHelpers": false,
     "moduleResolution": "node",
@@ -13,16 +14,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
+    "stripInternal": true,
     "skipLibCheck": true,
     "removeComments": false,
-    "outDir": "./compiled",
     "lib": [
       "es2015",
       "dom"
     ]
   },
   "files": [
-    "src/index.ts"
+    "index.ts"
   ],
   "angularCompilerOptions": {
     "genDir": "./compiled",
