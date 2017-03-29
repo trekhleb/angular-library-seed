@@ -1,5 +1,5 @@
 module.exports = function (config) {
-  let testWebpackConfig = require('./webpack.test.js');
+  let testWebpackConfig = require('./webpack.test.config.js');
 
   let configuration = {
 
