@@ -4,7 +4,7 @@
     "module": "ES2015",
     "baseUrl": ".",
     "rootDir": ".",
-    "outDir": "./compiled",
+    "outDir": "./aot",
     "noEmit": false,
     "noEmitHelpers": false,
     "moduleResolution": "node",
@@ -23,10 +23,10 @@
     ]
   },
   "files": [
-    "index.ts"
+    "./src/ng_library_starter.module.ts"
   ],
   "angularCompilerOptions": {
-    "genDir": "./compiled",
+    "genDir": "./aot",
     "skipTemplateCodegen": false,
     "strictMetadataEmit": true,
     "skipMetadataEmit" : false

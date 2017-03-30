@@ -1,1 +1,1 @@
-export * from './now_moment';
+export * from './greeter';

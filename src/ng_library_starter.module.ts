@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 
-import { NowMomentComponent } from './components';
+import { GreeterComponent } from './components';
+import { GreeterService } from './services';
 
 /**
  * NgLibraryStarterModule module.
  */
 @NgModule({
+  providers: [
+    GreeterService,
+  ],
   declarations: [
-    NowMomentComponent,
+    GreeterComponent,
   ],
   exports: [
-    NowMomentComponent,
+    GreeterComponent,
   ]
 })
 export class NgLibraryStarterModule {
