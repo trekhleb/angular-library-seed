@@ -5,6 +5,7 @@
   "main": "dist/ng-library-starter.umd.js",
   "module": "dist/ng-library-starter.esm.js",
   "jsnext:main": "dist/ng-library-starter.esm.js",
+  "types": "dist/ng-library-starter.d.ts",
   "scripts": {
     "explorer": "source-map-explorer ./dist/main.bundle.js ./dist/main.bundle.js.map",
     "build:aot:webpack": "npm run rimraf -- dist compiled && webpack --config webpack.aot.js --progress --colors --profile --bail",
