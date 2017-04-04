@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = {
   devtool: 'source-map',
   entry: {
+    polyfills: path.resolve(__dirname, 'src', 'polyfills.browser.ts'),
     main: path.resolve(__dirname, 'src', 'main-jit.ts')
   },
   resolve: {
