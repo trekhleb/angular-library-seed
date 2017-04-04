@@ -25,7 +25,7 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-dist
+/dist
 
 # Dependency directories
 node_modules
@@ -45,5 +45,7 @@ documentation
 
 # AOT compiled files.
 compiled
-aot
 final
+
+# Demos
+/demos/esm/dist

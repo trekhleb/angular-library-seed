@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES2015",
     "module": "ES2015",
-    // "baseUrl": ".",
-    // "rootDir": ".",
-    "outDir": "./dist/aot",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "./aot",
     "noEmit": false,
     "noEmitHelpers": false,
     "moduleResolution": "node",
@@ -23,11 +23,11 @@
     ]
   },
   "files": [
-    "./src/index.ts"
+    "./src/ng_library_starter.module.ts"
   ],
   "angularCompilerOptions": {
-    "genDir": "./dist/aot",
-    "skipTemplateCodegen": true,
+    "genDir": "./aot",
+    "skipTemplateCodegen": false,
     "strictMetadataEmit": true,
     "skipMetadataEmit" : false
   }

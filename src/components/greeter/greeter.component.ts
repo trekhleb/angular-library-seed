@@ -11,8 +11,13 @@ import { GreeterService } from '../../services';
  */
 @Component({
   selector: 'greater',
-  templateUrl: './greeter.component.html',
-  styleUrls: ['./greeter.component.css']
+  // templateUrl: './greeter.component.html',
+  template: `
+    <div class="greeting-notification">
+      {{ greetingString }}
+    </div>
+  `
+  // styleUrls: ['./greeter.component.css']
 })
 export class GreeterComponent implements OnInit {
   public greetingString: string;
