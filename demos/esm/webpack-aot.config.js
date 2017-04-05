@@ -13,7 +13,7 @@ const config = {
     extensions: ['.js', '.ts']
   },
   output: {
-    path: path.resolve(__dirname, 'dist', 'jit'),
+    path: path.resolve(__dirname, 'dist', 'aot'),
     filename: '[name].js'
   },
   module: {
@@ -26,21 +26,8 @@ const config = {
             options: {
               configFileName: path.resolve(__dirname, 'tsconfig-jit.json')
             }
-          },
-          {
-            loader: 'angular2-template-loader'
           }
         ]
-      },
-
-      /*
-       * to string and css loader support for *.css files (from Angular components)
-       * Returns file content as string
-       *
-       */
-      {
-        test: /\.css$/,
-        use: ['to-string-loader', 'css-loader']
       }
     ]
   },
