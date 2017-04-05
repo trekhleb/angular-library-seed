@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "es2015",
     "moduleResolution": "node",
+    "baseUrl": "",
+    "mapRoot": "",
+    "outDir": "./compiled",
+    "rootDir": "./src",
+    "declaration": true,
     "sourceMap": true,
     "inlineSources": true,
     "emitDecoratorMetadata": true,
@@ -13,8 +18,19 @@
       "es2015",
       "dom"
     ],
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "exclude": [
+      "node_modules",
+      "dist",
+      "**/*.ngfactory.ts",
+      "**/*.shim.ts",
+      "src/app/main*.ts",
+      "src/app/polyfill.ts"
+    ],
     "angularCompilerOptions": {
-      "genDir": "compiled"
+      "genDir": ".",
+      "entryModule": "src/app/app.module#AppModule"
     }
   }
 }

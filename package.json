@@ -9,8 +9,9 @@
   "scripts": {
     "build:aot": "npm run rimraf -- dist/aot && npm run ngc -- --project tsconfig-aot.json",
     "build:demo:esm:jit": "npm run rimraf -- demos/esm/dist/jit && webpack --config demos/esm/webpack-jit.config.js",
-    "build:demo:esm:aot": "npm run rimraf -- demos/esm/dist/aot && webpack --config demos/esm/webpack-aot.config.js --progress --colors --profile --bail --display-error-details",
-
+    "build:demo:esm:aot": "npm run clean:demo:esm:aot && npm run ngc -- --project demos/esm/tsconfig-aot.json",
+    "build:demo:esm:aot-cli": "npm run rimraf -- demos/esm/dist/aot && webpack --config demos/esm/webpack-aot.config.js --progress --colors --profile --bail --display-error-details",
+    "clean:demo:esm:aot": "rimraf demos/esm/src/app/**/*.ngfactory.ts demos/esm/src/app/**/*.ngstyle.ts demos/esm/src/app/**/*.ngsummary.json demos/esm/compiled demos/esm/dist/aot",
     "build:final:rollup": "npm run rimraf -- final/umd && npm run rollup -- -c rollup-config-final.js",
     "build:final:aot": "npm run rimraf -- final/aot && npm run ngc -- --project tsconfig-esm-final.json",
     "explorer": "source-map-explorer ./dist/main.bundle.js ./dist/main.bundle.js.map",
@@ -51,8 +52,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@angular/core": "~4.0.0",
     "@angular/common": "~4.0.0",
+    "@angular/core": "~4.0.0",
     "rxjs": "^5.2.0",
     "zone.js": "^0.8.4"
   },
