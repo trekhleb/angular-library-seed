@@ -49,3 +49,6 @@ final
 
 # Demos
 /demos/esm/dist
+/demos/esm/src/**/*.ngstyle.ts
+/demos/esm/src/**/*.ngfactory.ts
+/demos/esm/src/**/*.ngsummary.json

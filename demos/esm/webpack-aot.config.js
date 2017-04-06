@@ -7,7 +7,7 @@ const config = {
   devtool: 'source-map',
   entry: {
     polyfills: path.resolve(__dirname, 'src', 'polyfills.browser.ts'),
-    main: path.resolve(__dirname, 'src', 'main-jit.ts')
+    main: path.resolve(__dirname, 'src', 'main-aot.ts')
   },
   resolve: {
     extensions: ['.js', '.ts']

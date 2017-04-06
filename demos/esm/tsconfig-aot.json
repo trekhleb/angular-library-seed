@@ -3,34 +3,20 @@
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
-    "baseUrl": "",
-    "mapRoot": "",
+    // "baseUrl": ".",
     "outDir": "./compiled",
-    "rootDir": "./src",
-    "declaration": true,
+    // "rootDir": "./src",
+    "declaration": false,
     "sourceMap": true,
     "inlineSources": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
+    "compileOnSave": false,
     "lib": [
       "es2015",
       "dom"
-    ],
-    "compileOnSave": false,
-    "buildOnSave": false,
-    "exclude": [
-      "node_modules",
-      "dist",
-      "**/*.ngfactory.ts",
-      "**/*.shim.ts",
-      "src/app/main*.ts",
-      "src/app/polyfill.ts"
-    ],
-    "angularCompilerOptions": {
-      "genDir": ".",
-      "entryModule": "src/app/app.module#AppModule"
-    }
+    ]
   }
 }
