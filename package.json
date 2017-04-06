@@ -7,10 +7,10 @@
   "jsnext:main": "final/esm/ng-library-starter.js",
   "types": "dist/ng-library-starter.d.ts",
   "scripts": {
-    "explorer:demo:jit:main": "source-map-explorer ./demos/esm/dist/jit/main.js ./demos/esm/dist/jit/main.js.map",
-    "explorer:demo:jit:vendor": "source-map-explorer ./demos/esm/dist/jit/vendor.js ./demos/esm/dist/jit/vendor.js.map",
-    "explorer:demo:aot:main": "source-map-explorer ./demos/esm/dist/aot/main.js ./demos/esm/dist/aot/main.js.map",
-    "explorer:demo:aot:vendor": "source-map-explorer ./demos/esm/dist/aot/vendor.js ./demos/esm/dist/aot/vendor.js.map",
+    "explorer:demo:jit:main": "source-map-explorer ./demos/esm/dist/jit/main.js",
+    "explorer:demo:jit:vendor": "source-map-explorer ./demos/esm/dist/jit/vendor.js",
+    "explorer:demo:aot:main": "source-map-explorer ./demos/esm/dist/aot/main.js",
+    "explorer:demo:aot:vendor": "source-map-explorer ./demos/esm/dist/aot/vendor.js",
 
     "build:aot": "npm run rimraf -- dist/aot && npm run ngc -- --project tsconfig-aot.json",
     "build:demo:esm:jit": "npm run rimraf -- demos/esm/dist/jit && webpack --config demos/esm/webpack-jit.config.js",
