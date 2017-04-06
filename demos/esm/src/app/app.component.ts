@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   styleUrls: ['./app.component.css'],
-  template: `
-    <div class="greeter">Heya from {{ name }}</div>
-  `
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   public name = 'Angular';
