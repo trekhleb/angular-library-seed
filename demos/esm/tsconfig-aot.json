@@ -11,7 +11,6 @@
     "experimentalDecorators": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "compileOnSave": false,
     "lib": [
       "es2015",
       "dom"
