@@ -8,7 +8,7 @@ import {
 } from '@angular/core/testing';
 
 import { NgLibraryStarterModule } from '../../';
-import { GreeterComponent } from './greeter.component';
+import { GreeterComponent } from './tick-tock.component';
 
 describe('NowMomentComponent', () => {
   let componentFixture: ComponentFixture<GreeterComponent>;

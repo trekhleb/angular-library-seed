@@ -16,7 +16,7 @@ module.exports = {
    */
   devtool: 'inline-source-map',
 
-  resolve: require('./config/webpack/resolve'),
+  resolve: require('./_config/webpack/resolve'),
 
   /**
    * Options affecting the normal modules.
@@ -181,5 +181,5 @@ module.exports = {
 
   ],
 
-  performance: require('./config/webpack/performance')
+  performance: require('./_config/webpack/performance')
 };

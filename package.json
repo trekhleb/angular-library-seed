@@ -7,6 +7,8 @@
   "jsnext:main": "final/esm/ng-library-starter.js",
   "types": "dist/ng-library-starter.d.ts",
   "scripts": {
+    "build:umd": "",
+
     "build": "node build.js",
     "build:aot": "npm run rimraf -- dist/aot && npm run ngc -- --project tsconfig-aot.json",
     "build:aot2": "npm run ngc -- --project tsconfig-esm-2.json",

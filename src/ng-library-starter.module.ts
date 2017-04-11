@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 
-import { GreeterComponent } from './components';
-import { GreeterService } from './services';
+import { TickTockComponent } from './components';
+import { TickTockService } from './services';
 
 /**
  * NgLibraryStarterModule module.
  */
 @NgModule({
   providers: [
-    GreeterService,
+    TickTockService,
   ],
   declarations: [
-    GreeterComponent,
+    TickTockComponent,
   ],
   exports: [
-    GreeterComponent,
+    TickTockComponent,
   ]
 })
 export class NgLibraryStarterModule {
