@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+const AotPlugin = require('@ngtools/webpack').AotPlugin;
 
 const config = {
   devtool: 'source-map',
@@ -13,24 +14,15 @@ const config = {
     extensions: ['.js', '.ts']
   },
   output: {
-    path: path.resolve(__dirname, 'dist', 'jit'),
+    path: path.resolve(__dirname, 'dist', 'aot-cli'),
     filename: '[name].js'
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: [
-          {
-            loader: 'awesome-typescript-loader',
-            options: {
-              configFileName: path.resolve(__dirname, 'tsconfig-jit.json')
-            }
-          },
-          {
-            loader: 'angular2-template-loader'
-          }
-        ]
+        use: ['@ngtools/webpack']
+        // use: ['@ultimate/aot-loader']
       },
 
       /*
@@ -56,6 +48,10 @@ const config = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
+
+    new AotPlugin({
+      tsConfigPath: path.resolve(__dirname, 'tsconfig-aot-cli.json')
+    }),
 
     /*
      * Plugin: HtmlWebpackPlugin
