@@ -1,0 +1,8 @@
+.idea/
+coverage/
+demo/**/lib
+dist
+documentation
+node_modules
+npm-debug.log
+tmp
