@@ -32,6 +32,10 @@ export default (config) => {
       }
     },
 
+    mime: {
+      'text/x-typescript': [ 'ts' ]
+    },
+
     coverageIstanbulReporter: {
       reports: ['text-summary', 'html', 'lcovonly'],
       fixWebpackSourcePaths: true
@@ -55,10 +59,10 @@ export default (config) => {
     // Available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['Chrome'],
 
-    // browserConsoleLogOptions: {
-    //   terminal: true,
-    //   level: 'log'
-    // },
+    browserConsoleLogOptions: {
+      terminal: true,
+      level: 'log'
+    },
 
     singleRun: true,
     colors: true

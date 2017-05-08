@@ -8,6 +8,6 @@ describe('TickTockService', () => {
   });
 
   it('should return current time', () => {
-    expect(tickTockService.getTick('testFormat')).toEqual('Time');
+    expect(tickTockService.getTick('testFormat2')).toEqual('Time');
   });
 });
