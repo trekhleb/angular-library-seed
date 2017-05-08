@@ -1,21 +1,30 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "noEmit": true,
     "sourceMap": true,
-    "declaration": true,
-    "removeComments": false,
-    "noImplicitAny": true,
+    "declaration": false,
+    "noImplicitAny": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "pretty": true,
-    "outDir": "dist",
-    "rootDir": "./src"
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "types": [
+      "jasmine",
+      "karma",
+      "node",
+      "webpack",
+      "webpack-env"
+    ]
   },
   "include": [
-    "./src/**/*"
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
