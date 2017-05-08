@@ -17,7 +17,8 @@ export default {
         exclude: /(node_modules|\.spec\.ts$)/,
         loader: 'istanbul-instrumenter-loader',
         enforce: 'post'
-      } ]
+      }
+    ]
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin({
