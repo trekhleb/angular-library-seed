@@ -10,7 +10,7 @@
     "build": "npm run inline-templates && npm run build:esm && npm run build:umd",
     "build:esm": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "build:umd": "rollup -c rollup.config.js",
-    "ci:travis": "npm run lint",
+    "ci:travis": "npm run lint && npm run test",
     "docs": "compodoc -p tsconfig.json",
     "explorer": "source-map-explorer ./dist/index.umd.js ./dist/index.umd.js.map",
     "inline-templates": "gulp inline-templates",
