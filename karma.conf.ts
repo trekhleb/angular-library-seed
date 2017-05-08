@@ -49,7 +49,7 @@ export default (config) => {
     // config.LOG_WARN
     // config.LOG_INFO
     // config.LOG_DEBUG
-    logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_WARN,
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
