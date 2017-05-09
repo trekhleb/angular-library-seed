@@ -8,11 +8,16 @@
   "license": "MIT",
   "keywords": [
     "angular2",
+    "angular4",
     "angular",
     "library",
-    "starter"
+    "starter",
+    "ng"
   ],
-  "author": "Oleksii Trekhleb",
+  "author": {
+    "name": "Oleksii Trekhleb",
+    "url": "https://www.linkedin.com/in/trekhleb/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trekhleb/angular-library-starter.git"
