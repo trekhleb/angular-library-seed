@@ -1,11 +1,26 @@
 {
-  "name": "ng-library-starter",
-  "description": "Angular2+ library starter",
+  "name": "angular-library-starter",
+  "version": "0.0.1",
+  "description": "Angular library starter",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "license": "MIT",
+  "keywords": [
+    "angular2",
+    "angular",
+    "library",
+    "starter"
+  ],
+  "author": "Oleksii Trekhleb",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trekhleb/ng-library-starter.git"
+    "url": "https://github.com/trekhleb/angular-library-starter.git"
   },
+  "bugs": {
+    "url": "https://github.com/trekhleb/angular-library-starter/issues"
+  },
+  "homepage": "https://github.com/trekhleb/angular-library-starter#readme",
   "scripts": {
     "build": "npm run inline-templates && npm run build:esm && npm run build:umd",
     "build:esm": "node_modules/.bin/ngc -p tsconfig-aot.json",
