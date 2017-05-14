@@ -38,6 +38,7 @@
     "postbuild": "rimraf tmp",
     "prebuild": "rimraf dist",
     "test": "karma start",
+    "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
   "peerDependencies": {
