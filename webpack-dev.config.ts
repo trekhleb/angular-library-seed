@@ -8,11 +8,12 @@ const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
 
 export default {
   entry: {
-    index: './src/tick-tock.module.ts',
+    'index.umd': './src/tick-tock.module.ts',
+    'index.umd.min': './src/tick-tock.module.ts',
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].umd.js',
+    filename: '[name].js',
     libraryTarget: 'umd',
     library: 'ticktock'
   },
@@ -71,6 +72,11 @@ export default {
       /angular(\\|\/)core(\\|\/)@angular/,
       path.join(__dirname, 'src')
     ),
+
+    new webpack.optimize.UglifyJsPlugin({
+      include: /\.min\.js$/,
+      sourceMap: true
+    }),
 
     new webpack.BannerPlugin({
       banner: `
