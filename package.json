@@ -38,7 +38,7 @@
     "lint": "npm run tslint 'src/**/*.ts'",
     "postbuild": "rimraf tmp",
     "prebuild": "rimraf dist",
-    "test": "karma start",
+    "test": "npm run lint && karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
