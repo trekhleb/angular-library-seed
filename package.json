@@ -29,7 +29,7 @@
   "scripts": {
     "build": "npm run build:esm && npm run build:umd",
     "build:esm": "npm run inline-templates && node_modules/.bin/ngc -p tsconfig-aot.json",
-    "build:umd": "webpack --config webpack-dev.config.ts",
+    "build:umd": "webpack --config webpack-umd.config.ts",
     "build:umd:watch": "webpack --config webpack-dev.config.ts --watch",
     "ci:travis": "npm run lint && npm run test",
     "docs": "compodoc -p tsconfig.json",
