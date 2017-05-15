@@ -7,12 +7,12 @@
   "typings": "./dist/index.d.ts",
   "license": "MIT",
   "keywords": [
+    "angular",
     "angular2",
     "angular4",
-    "angular",
     "library",
-    "starter",
-    "ng"
+    "ng",
+    "starter"
   ],
   "author": {
     "name": "Oleksii Trekhleb",
