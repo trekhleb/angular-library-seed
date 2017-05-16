@@ -37,7 +37,6 @@
     "explorer": "source-map-explorer ./dist/index.umd.js ./dist/index.umd.js.map",
     "inline-templates": "gulp inline-templates",
     "lint": "npm run tslint 'src/**/*.ts'",
-    "postbuild": "rimraf tmp",
     "prebuild": "rimraf dist",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
