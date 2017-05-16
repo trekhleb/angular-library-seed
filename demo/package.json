@@ -12,7 +12,7 @@
     "build:aot:bundle": "webpack --config esm/webpack-aot.config.js --bail",
     "build:aot:compile": "node_modules/.bin/ngc -p esm/tsconfig-aot.json",
     "build:jit": "webpack --config esm/webpack.config.js --bail",
-    "build:umd": "rimraf umd/lib && copyfiles -u 2 '../dist/index.umd.js' umd/lib",
+    "build:umd": "rimraf umd/lib && copyfiles -u 2 '../dist/index.umd.*' umd/lib",
     "clean:esm:aot": "rimraf lib esm/dist/aot esm/node_modules esm/src/app/*.ngfactory.ts esm/src/app/*.ngsummary.json",
     "clean:esm:jit": "rimraf lib esm/dist/jit",
     "copy-lib": "copyfiles --up 2 '../dist/**/*' esm/lib",
