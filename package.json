@@ -31,7 +31,7 @@
     "build:esm": "npm run inline-templates && node_modules/.bin/ngc -p tsconfig-aot.json",
     "build:umd": "webpack --config webpack-umd.config.ts",
     "build:umd:watch": "webpack --config webpack-umd.config.ts --watch",
-    "ci:travis": "npm run lint && npm run test",
+    "ci:travis": "npm run lint && npm run test && npm run build",
     "cleanup": "rimraf coverage dist tmp",
     "docs": "compodoc -p tsconfig.json",
     "explorer": "source-map-explorer ./dist/index.umd.js ./dist/index.umd.js.map",
@@ -39,7 +39,7 @@
     "lint": "npm run tslint 'src/**/*.ts'",
     "postbuild": "rimraf tmp",
     "prebuild": "rimraf dist",
-    "test": "npm run lint && karma start",
+    "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
