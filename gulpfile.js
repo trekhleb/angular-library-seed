@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('node-sass');
 const inlineTemplates = require('gulp-inline-ng2-template');
+const exec = require('child_process').exec;
 
 /**
  * Inline templates configuration.
@@ -17,10 +18,35 @@ const INLINE_TEMPLATES = {
   }
 };
 
+/**
+ * Inline external HTML and SCSS templates into Angular component files.
+ * @see: https://github.com/ludohenin/gulp-inline-ng2-template
+ */
 gulp.task('inline-templates', () => {
   return gulp.src(INLINE_TEMPLATES.SRC)
     .pipe(inlineTemplates(INLINE_TEMPLATES.CONFIG))
     .pipe(gulp.dest(INLINE_TEMPLATES.DIST));
+});
+
+/**
+ * Build ESM by running npm task.
+ * This is a temporary solution until ngc is supported --watch mode.
+ * @see: https://github.com/angular/angular/issues/12867
+ */
+gulp.task('build:esm', ['inline-templates'], (cb) => {
+  exec('npm run ngcompile', function (err, stdout, stderr) {
+    console.log(stdout, stderr);
+    cb(err)
+  });
+});
+
+/**
+ * Implements ESM build watch mode.
+ * This is a temporary solution until ngc is supported --watch mode.
+ * @see: https://github.com/angular/angular/issues/12867
+ */
+gulp.task('build:esm:watch', () => {
+  gulp.watch('src/**/*', ['build:esm']);
 });
 
 /**
