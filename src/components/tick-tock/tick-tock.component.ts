@@ -8,18 +8,23 @@ import { TickTockService } from '../../services/tick-tock/tick-tock.service';
   templateUrl: './tick-tock.component.html',
 })
 export class TickTockComponent implements OnInit {
-  public header: string;
+  // Current time string.
+  public currentTime: string;
 
   /**
    * Component constructor with injected dependencies.
    * @param tickTockService
    */
-  public constructor(private tickTockService: TickTockService) {}
+  public constructor(
+    private tickTockService: TickTockService
+  ) {}
 
   /**
    * Implements onInit event handler.
    */
   public ngOnInit(): void {
-    this.header = this.tickTockService.getTick('testFormat');
+    this.tickTockService.getTick().subscribe(
+      (timeString: string) => this.currentTime = timeString
+    );
   }
 }

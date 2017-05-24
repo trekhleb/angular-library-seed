@@ -32,7 +32,7 @@
     "build:esm:watch": "gulp build:esm:watch",
     "build:umd": "webpack --config webpack-umd.config.ts",
     "build:umd:watch": "npm run build:umd -- --watch",
-    "build:watch": "concurrently --kill-others --raw \"npm run build:umd:watch\" \"npm run build:esm:watch\"",
+    "build:watch": "concurrently --raw \"npm run build:umd:watch\" \"npm run build:esm:watch\"",
     "ci:travis": "npm run lint && npm run test && npm run build && npm run docs",
     "clean:all": "npm run clean:tmp && rimraf node_modules",
     "clean:tmp": "rimraf coverage dist tmp",
