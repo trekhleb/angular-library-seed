@@ -24,7 +24,7 @@ export class TickTockComponent implements OnInit {
    */
   public ngOnInit(): void {
     this.tickTockService.getTick().subscribe(
-      (timeString: string) => this.currentTime = timeString
+      (timeString) => this.currentTime = timeString
     );
   }
 }
