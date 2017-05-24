@@ -84,7 +84,16 @@ const config = {
     new CommonsChunkPlugin({
       name: ['polyfills', 'vendor'].reverse()
     }),
-  ]
+  ],
+
+  devServer: {
+    port: 8000,
+    historyApiFallback: true,
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
+    }
+  },
 };
 
 module.exports = config;
