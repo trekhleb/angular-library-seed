@@ -6,13 +6,29 @@ import { Observable } from 'rxjs/Rx';
  */
 @Injectable()
 export class TickTockService {
+
+  /**
+   * Extend time value with zero if required.
+   * @param value
+   * @returns {string}
+   */
+  private static formatTimeNumber(value: number): string {
+    const stringValue = value.toString();
+    return stringValue.length === 1 ? '0' + stringValue : stringValue;
+  }
+
   /**
    * Get current time string.
    * @returns {string}
    */
   private static getNowString(): string {
     const date = new Date();
-    return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+
+    const hours = TickTockService.formatTimeNumber(date.getHours());
+    const minutes = TickTockService.formatTimeNumber(date.getMinutes());
+    const seconds = TickTockService.formatTimeNumber(date.getSeconds());
+
+    return `${hours}:${minutes}:${seconds}`;
   }
 
   /**
