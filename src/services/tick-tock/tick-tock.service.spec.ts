@@ -7,7 +7,12 @@ describe('TickTockService', () => {
     tickTockService = new TickTockService();
   });
 
-  it('should return current time', () => {
-    expect(tickTockService.getTick('testFormat2')).toEqual('Time');
+  it('should return observable with current time string', (done) => {
+    tickTockService.getTick().subscribe(
+      (timeString) => {
+        expect(timeString.length).toEqual(8);
+        done();
+      }
+    );
   });
 });
