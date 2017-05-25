@@ -19,3 +19,5 @@ cache:
   yarn: true
 notifications:
   email: false
+after_success:
+  - npm run codecov
