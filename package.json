@@ -1,6 +1,6 @@
 {
   "name": "angular-library-seed",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Angular library starter",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
@@ -34,7 +34,7 @@
     "build:umd": "webpack --config webpack-umd.config.ts",
     "build:umd:watch": "npm run build:umd -- --watch",
     "build:watch": "concurrently --raw \"npm run build:umd:watch\" \"npm run build:esm:watch\"",
-    "ci:travis": "npm run lint && npm run test && npm run build && npm run docs",
+    "ci": "npm run lint && npm run test && npm run build && npm run docs",
     "clean:all": "npm run clean:tmp && rimraf node_modules",
     "clean:tmp": "rimraf coverage dist tmp documentation",
     "codecov": "cat coverage/lcov.info | codecov",
@@ -45,9 +45,8 @@
     "postbuild": "rimraf tmp",
     "prebuild": "rimraf dist",
     "prebuild:watch": "rimraf dist tmp",
-    "prerelease": "npm run lint && npm run test && npm run build",
-    "release": "npm run release:npm",
-    "release:npm": "npm publish",
+    "prepublish": "npm run ci",
+    "preversion": "npm run ci",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
