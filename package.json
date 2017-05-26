@@ -1,6 +1,6 @@
 {
-  "name": "angular-library-starter",
-  "version": "0.0.1",
+  "name": "angular-library-seed",
+  "version": "0.0.2",
   "description": "Angular library starter",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
@@ -12,7 +12,8 @@
     "angular4",
     "library",
     "ng",
-    "starter"
+    "starter",
+    "seed"
   ],
   "author": {
     "name": "Oleksii Trekhleb",
