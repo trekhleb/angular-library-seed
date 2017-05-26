@@ -45,6 +45,9 @@
     "postbuild": "rimraf tmp",
     "prebuild": "rimraf dist",
     "prebuild:watch": "rimraf dist tmp",
+    "prerelease": "npm run lint && npm run test && npm run build",
+    "release": "npm run release:npm",
+    "release:npm": "npm publish",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
