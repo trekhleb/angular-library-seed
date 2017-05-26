@@ -1,6 +1,6 @@
 {
   "name": "angular-library-seed",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Angular library starter",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
