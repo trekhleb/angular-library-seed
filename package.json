@@ -43,6 +43,7 @@
     "lint": "npm run tslint 'src/**/*.ts'",
     "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "postbuild": "rimraf tmp",
+    "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist",
     "prebuild:watch": "rimraf dist tmp",
     "prepublish": "npm run ci",
