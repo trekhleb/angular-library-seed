@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trekhleb/angular-library-starter.git"
+    "url": "https://github.com/trekhleb/angular-library-seed.git"
   },
   "bugs": {
-    "url": "https://github.com/trekhleb/angular-library-starter/issues"
+    "url": "https://github.com/trekhleb/angular-library-seed/issues"
   },
-  "homepage": "https://github.com/trekhleb/angular-library-starter#readme",
+  "homepage": "https://github.com/trekhleb/angular-library-seed#readme",
   "scripts": {
     "build": "npm run build:esm && npm run build:umd",
     "build:esm": "gulp inline-templates && npm run ngcompile",
