@@ -1,7 +1,7 @@
 {
   "name": "angular-library-seed",
   "version": "0.0.9",
-  "description": "Angular library starter",
+  "description": "Angular library seed",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -38,7 +38,7 @@
     "clean:all": "npm run clean:tmp && rimraf node_modules",
     "clean:tmp": "rimraf coverage dist tmp docs",
     "codecov": "cat coverage/lcov.info | codecov",
-    "docs": "compodoc -p tsconfig.json -d docs --disableGraph --disableCoverage --disablePrivateOrInternalSupport",
+    "docs": "compodoc -p tsconfig.json -d docs --disableCoverage --disablePrivateOrInternalSupport",
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs",
     "lint": "npm run tslint 'src/**/*.ts'",
