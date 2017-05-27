@@ -8,7 +8,7 @@ addons:
       - google-chrome-stable
 language: node_js
 node_js:
-  - stable
+  - node
 script:
   - npm run ci:travis
 before_script:
