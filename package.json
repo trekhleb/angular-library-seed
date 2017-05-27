@@ -46,7 +46,8 @@
     "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist",
     "prebuild:watch": "rimraf dist tmp",
-    "prepublish": "npm run ci",
+    "prepublishOnly": "npm run ci",
+    "preversion": "npm run ci",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
