@@ -12,13 +12,13 @@ export default (config) => {
 
     // List of files to load in the browser.
     files: [
-      'src/test.ts'
+      'karma-test-entry.ts'
     ],
 
     // Preprocess matching files before serving them to the browser.
     // Available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/test.ts': ['webpack', 'sourcemap']
+      'karma-test-entry.ts': ['webpack', 'sourcemap']
     },
 
     webpack: webpackTestConfig,
