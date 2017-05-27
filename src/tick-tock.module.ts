@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { TickTockComponent } from './components/tick-tock/tick-tock.component';
-import { TickTockService } from './services/tick-tock/tick-tock.service';
+import { TickTockComponent } from './components';
+import { TickTockService } from './services';
 
 @NgModule({
   providers: [
