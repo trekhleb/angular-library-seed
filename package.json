@@ -38,7 +38,7 @@
     "clean:all": "npm run clean:tmp && rimraf node_modules",
     "clean:tmp": "rimraf coverage dist tmp documentation",
     "codecov": "cat coverage/lcov.info | codecov",
-    "docs": "compodoc -p tsconfig.json",
+    "docs": "compodoc -p tsconfig.json -d docs --disableGraph --disableCoverage --disablePrivateOrInternalSupport",
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "lint": "npm run tslint 'src/**/*.ts'",
     "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
