@@ -40,7 +40,7 @@
     "codecov": "cat coverage/lcov.info | codecov",
     "docs": "compodoc -p tsconfig.json -d docs --disableGraph --disableCoverage --disablePrivateOrInternalSupport",
     "explorer": "source-map-explorer ./dist/index.umd.js",
-    "gh-pages": "git checkout gh-pages && git merge master --no-edit --no-ff && npm run docs && git add . && git commit -m \"chore: build docs\" && git push && git checkout master",
+    "gh-pages": "git checkout gh-pages && git merge master --no-edit --no-ff && npm run docs && git add . && git commit -m \"chore: build docs\" && git push && git checkout master && rimraf docs",
     "lint": "npm run tslint 'src/**/*.ts'",
     "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
     "postbuild": "rimraf tmp",
