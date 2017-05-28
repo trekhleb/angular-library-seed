@@ -1,11 +1,6 @@
 {
-  "name": "ng-library-starter-demo",
-  "description": "Demo application for Angular2+ library starter",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trekhleb/ng-library-starter.git"
-  },
+  "name": "angular-library-seed-demo",
+  "description": "AOT/JIT/UMD build demo of angular library seed",
   "scripts": {
     "build": "npm run build:aot && npm run build:jit && npm run build:umd",
     "build:aot": "npm run build:aot:compile && npm run build:aot:bundle",
