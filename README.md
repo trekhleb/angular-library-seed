@@ -5,8 +5,8 @@
 
 Work on README in progress...
 
-Documentation: https://trekhleb.github.io/angular-library-seed/
+Documentation Example: https://trekhleb.github.io/angular-library-seed/
 
 NPM: https://www.npmjs.com/package/angular-library-seed
 
-Plunker: http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/
+Plunker Example: http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/
