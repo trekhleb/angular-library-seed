@@ -10,10 +10,15 @@
     "angular",
     "angular2",
     "angular4",
+    "aot",
+    "aot-compatible",
+    "aot-compilation",
     "library",
     "ng",
+    "seed",
     "starter",
-    "seed"
+    "tick-tock",
+    "typescript"
   ],
   "author": {
     "name": "Oleksii Trekhleb",
