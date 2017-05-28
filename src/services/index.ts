@@ -1,1 +1,1 @@
-export { TickTockService } from './tick-tock';
+export * from './tick-tock';

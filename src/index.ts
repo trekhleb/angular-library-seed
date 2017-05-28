@@ -1,1 +1,1 @@
-export { TickTockModule } from './tick-tock.module';
+export * from './tick-tock.module';

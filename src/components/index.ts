@@ -1,1 +1,1 @@
-export { TickTockComponent } from './tick-tock';
+export * from './tick-tock';
