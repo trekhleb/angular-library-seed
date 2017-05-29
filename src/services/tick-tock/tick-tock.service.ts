@@ -14,7 +14,7 @@ export class TickTockService {
    */
   private static formatTimeNumber(value: number): string {
     const stringValue = value.toString();
-    return stringValue.length === 1 ? '0' + stringValue : stringValue;
+    return ('0' + stringValue).slice(-2);
   }
 
   /**
