@@ -99,34 +99,40 @@ Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install
 - `brew install yarn` for Mac.
 
 ## Installing
-- `fork` this repo
-- `clone` your fork to your local environment
-- `yarn install` to install required dependencies (or `npm i`)
+- `fork` this repo.
+- `clone` your fork to your local environment.
+- `yarn install` to install required dependencies (or `npm i`).
 
 ## Replace `TickTock` library with your own library
 This step may be optional at first since you might just want to play with existing library example.
 
 Once you're ready to develop your own library you should do the following.
-- Check and re-configure `package.json` fields like name, version, keywords, description etc. You may read about [specifics of npm's package.json handling](https://docs.npmjs.com/files/package.json) to do that.
-- Replace the content of `src` folder with your library sources if you already have ones. Your library must have `index.ts` file as an entry point for further building.
+- Check and re-configure `package.json` fields like `name`, `version`, `keywords`, `description` etc. You may read about specifics of npm's [package.json handling](https://docs.npmjs.com/files/package.json) to do that.
+- Replace the content of `src` folder with your library sources. Your library must have `index.ts` file as an entry point for further building.
 - Update `demo` sources to make them consume your library in case if you want to keep the demo folder.
 
 ## Build the library
-- `yarn build` for building the library once
-- `yarn build:watch` for building the library and watch for file changes
+- `yarn build` for building the library once.
+- `yarn build:watch` for building the library and watch for file changes.
 
 ## Other commands
 
 #### Lint the code
-- `yarn lint` for performing static code analysis
+- `yarn lint` for performing static code analysis.
 
 #### Test the library
-- `yarn test` for running all your `*.spec.ts` tests once
+- `yarn test` for running all your `*.spec.ts` tests once. Generated code coverage report may be found in `coverage` folder.
 - `yarn test:watch` for running all you `*.spec.ts` and watch for file changes.
 
 #### Generate documentation
-- `yarn docs` for generating documentation locally
-- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages
+- `yarn docs` for generating documentation locally.
+- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages.
 
 #### Explore the bundle
-- `yarn explore` to find out where all your code in bundle is coming from
+- `yarn explore` to find out where all your code in bundle is coming from.
+
+#### Bump library version
+- `npm version patch` to increase library version. [More on bumping](https://docs.npmjs.com/cli/version).
+
+#### Publish library to NPM
+- `npm publish` to publish your library sources on [npmjs.com](https://www.npmjs.com/)
