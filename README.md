@@ -67,12 +67,12 @@ angular-library-seed
 
 ## Dependencies
 
-### Node/NPM
+#### Node/NPM
 Install latest Node and NPM following the [instructions](https://nodejs.org/en/download/).
 
 - `brew install node` for Mac.
 
-### Yarn
+#### Yarn
 [Yarn package manager](https://yarnpkg.com/en/) is optional but highly recommended. If you prefer to work with `npm` directly you may ignore this step.
 
 Yarn installs library dependencies faster and also locks theirs versions. It has [more advantages](https://yarnpkg.com/en/) but these two are already pretty attractive. 
