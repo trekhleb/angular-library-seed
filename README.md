@@ -73,16 +73,19 @@ Install latest Node and NPM following the [instructions](https://nodejs.org/en/d
 - `brew install node` for Mac.
 
 ### Yarn
-[Yarn package manager](https://yarnpkg.com/en/) is optional but highly recommended. It installs library dependencies faster and also locks theirs versions. It has [more advantages](https://yarnpkg.com/en/) but these two are pretty attractive. 
+[Yarn package manager](https://yarnpkg.com/en/) is optional but highly recommended. If you prefer to work with `npm` directly you may ignore this step.
+
+Yarn installs library dependencies faster and also locks theirs versions. It has [more advantages](https://yarnpkg.com/en/) but these two are already pretty attractive. 
 
 Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install).
 
 - `brew install yarn` for Mac.
 
-If you prefer to work with `npm` directly you may ignore this step.
-
 ## Installing
-
 - `fork` this repo
 - `clone` your fork
 - `yarn install` to install required dependencies (or `npm i`)
+
+## Build the library
+- `yarn build` for building the library once
+- `yarn build:watch` for building the library and watch for file changes
