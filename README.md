@@ -8,7 +8,7 @@
 This project contains TickTock library example. The library itself is small and the only thing it does is [displaying current time](http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/) (Plunker example). But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them.
 
 # You might find this project helpful if
-- You want to create library for **Angular 2+**.
+- You want to create library for **Angular 4**.
 - You want your library to be ready for further **AOT** or **JIT** compilation.
 - You want your library to be ready for further usage **directly in browsers** (let's say [UMD](https://github.com/umdjs/umd) bundle loaded by [SystemJS](https://github.com/systemjs/systemjs)).
 - You want to write component styles in **external SCSS files**.

@@ -8,7 +8,6 @@
   "license": "MIT",
   "keywords": [
     "angular",
-    "angular2",
     "angular4",
     "aot",
     "aot-compatible",
@@ -60,8 +59,8 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "@angular/common": "^4.0.0 || ^2.0.0",
-    "@angular/core": "^4.0.0 || ^2.0.0"
+    "@angular/common": "^4.0.0",
+    "@angular/core": "^4.0.0"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
