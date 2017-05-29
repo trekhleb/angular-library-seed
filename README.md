@@ -28,6 +28,22 @@ This project contains TickTock library example. The library itself is small and 
 - **Continuous integration** with [Travis CI](https://travis-ci.org/).
 - **Code coverage** badge via [Codecov](https://codecov.io) as a reminder to cover code with tests.
 
+# Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/trekhleb/angular-library-seed.git
+
+# Go to repo folder
+cd angular-library-seed
+
+# Install all dependencies
+yarn install
+
+# Build the library
+yarn build
+```
+
 # File Structure
 
 ```
@@ -69,7 +85,7 @@ angular-library-seed
 ## Dependencies
 
 #### Node/NPM
-Install latest Node and NPM following the [instructions](https://nodejs.org/en/download/).
+Install latest Node and NPM following the [instructions](https://nodejs.org/en/download/). Make sure you have Node version >= 7.0 and NPM >= 4.
 
 - `brew install node` for Mac.
 
