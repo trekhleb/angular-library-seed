@@ -126,13 +126,13 @@ Once you're ready to develop your own library you should do the following.
 
 #### Generate documentation
 - `yarn docs` for generating documentation locally.
-- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages.
+- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages. [Documentation example](https://trekhleb.github.io/angular-library-seed/).
 
 #### Explore the bundle
-- `yarn explore` to find out where all your code in bundle is coming from.
+- `yarn explorer` to find out where all your code in bundle is coming from.
 
 #### Bump library version
 - `npm version patch` to increase library version. [More on bumping](https://docs.npmjs.com/cli/version).
 
 #### Publish library to NPM
-- `npm publish` to publish your library sources on [npmjs.com](https://www.npmjs.com/)
+- `npm publish` to publish your library sources on [npmjs.com](https://www.npmjs.com/). Once the library is published it will be [available for usage](https://www.npmjs.com/package/angular-library-seed) in npm packages.
