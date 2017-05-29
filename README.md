@@ -26,3 +26,33 @@ This project contains TickTock library example. The library itself is small and 
 - **Documentation hosting**  via [GitHub Pages](https://pages.github.com/).
 - **AOT/JIT/UMD demos** via [Webpack](https://webpack.js.org/) and [SystemJS](https://github.com/systemjs/systemjs) that allows you to test library builds.
 - **Continuous integration** with [Travis CI](https://travis-ci.org/).
+
+# File Structure
+
+```
+angular-library-seed
+  ├─ demo
+  |  ├─ esm
+  |  ├─ umd
+  |  ├─ .gitignore
+  |  ├─ gulpfile.js
+  |  ├─ package.json
+  |  └─ yarn.lock
+  ├─ src
+  ├─ .editorconfig
+  ├─ .gitignore	
+  ├─ .npmignore
+  ├─ .travis.yml
+  ├─ LICENSE
+  ├─ README.md
+  ├─ gulpfile.js
+  ├─ karma-test-entry.ts
+  ├─ karma.conf.ts
+  ├─ package.json
+  ├─ tsconfig-aot.json
+  ├─ tsconfig.json
+  ├─ tslint.json
+  ├─ webpack-test.config.ts
+  ├─ webpack-umd.config.ts
+  └─ yarn.lock
+```
