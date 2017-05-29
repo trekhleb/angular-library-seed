@@ -26,6 +26,7 @@ This project contains TickTock library example. The library itself is small and 
 - **Documentation hosting**  via [GitHub Pages](https://pages.github.com/).
 - **AOT/JIT/UMD demos** via [Webpack](https://webpack.js.org/) and [SystemJS](https://github.com/systemjs/systemjs) that allows you to test library builds.
 - **Continuous integration** with [Travis CI](https://travis-ci.org/).
+- **Code coverage** badge via [Codecov](https://codecov.io) as a reminder to cover code with tests.
 
 # File Structure
 
@@ -85,7 +86,24 @@ Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install
 - `fork` this repo
 - `clone` your fork
 - `yarn install` to install required dependencies (or `npm i`)
+- Replace the content of `src` folder with your library sources if you already have ones. Your library must have `index.ts` file as an entry point for further building.
 
 ## Build the library
 - `yarn build` for building the library once
 - `yarn build:watch` for building the library and watch for file changes
+
+## Other commands
+
+#### Lint the code
+- `yarn lint` for performing static code analysis
+
+#### Test the library
+- `yarn test` for running all your `*.spec.ts` tests once
+- `yarn test:watch` for running all you `*.spec.ts` and watch for file changes.
+
+#### Generate documentation
+- `yarn docs` for generating documentation locally
+- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages
+
+#### Explore the bundle
+- `yarn explore` to find out where all your code in bundle is coming from
