@@ -240,7 +240,7 @@
 <p>This project contains TickTock library example. The library itself is small and the only thing it does is <a href="http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/">displaying current time</a> (Plunker example). But what <strong>most important</strong> is that the project contains <strong>reusable environment</strong> for the libraries that allows to build, test, lint, document, explore and publish them.</p>
 <h1 id="you-might-find-this-project-helpful-if">You might find this project helpful if</h1>
 <ul>
-<li>You want to create library for <strong>Angular 2+</strong>.</li>
+<li>You want to create library for <strong>Angular 4</strong>.</li>
 <li>You want your library to be ready for further <strong>AOT</strong> or <strong>JIT</strong> compilation.</li>
 <li>You want your library to be ready for further usage <strong>directly in browsers</strong> (let&#39;s say <a href="https://github.com/umdjs/umd">UMD</a> bundle loaded by <a href="https://github.com/systemjs/systemjs">SystemJS</a>).</li>
 <li>You want to write component styles in <strong>external SCSS files</strong>.</li>
@@ -261,11 +261,12 @@
 <li><strong>Continuous integration</strong> with <a href="https://travis-ci.org/">Travis CI</a>.</li>
 <li><strong>Code coverage</strong> badge via <a href="https://codecov.io">Codecov</a> as a reminder to cover code with tests.</li>
 </ul>
-<h1 id="file-structure">File Structure</h1>
+<h1 id="quick-start">Quick Start</h1>
+<pre><code class="hljs bash"><span class="hljs-comment"># Clone the repo</span><br>git <span class="hljs-built_in">clone</span> https://github.com/trekhleb/angular-library-seed.git<br><br><span class="hljs-comment"># Go to repo folder</span><br><span class="hljs-built_in">cd</span> angular-library-seed<br><br><span class="hljs-comment"># Install all dependencies</span><br>yarn install<br><br><span class="hljs-comment"># Build the library</span><br>yarn build</code></pre><h1 id="file-structure">File Structure</h1>
 <pre><code class="hljs undefined">angular-library-seed<br>  ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) <br>  |  ├─ esm                       * AOT/JIT demo project<br>  |  ├─ umd                       * UMD demo project<br>  |  ├─ .gitignore                * List of files that are ignored while publishing to git repo<br>  |  ├─ gulpfile.js               * Gulp helper scripts for building demos<br>  |  ├─ package.json              * NPM dependencies and helper scripts for building demos<br>  |  └─ yarn.lock                 * Yarn dependency versions lock for demo applications<br>  |<br>  ├─ src                          * Library sources home folder (THE PLACE FOR YOUR LIBRARY SOURCES)<br>  |  ├─ components                * Example of library components with tests<br>  |  ├─ services                  * Example of library services with tests<br>  |  ├─ index.ts                  * Library entry point that is used by builders<br>  |  └─ tick-tock.module.ts       * Example of library module<br>  |<br>  ├─ .editorconfig                * Common IDE configuration<br>  ├─ .gitignore                      * List of files that are ignored while publishing to git repo<br>  ├─ .npmignore                   * List of files that are ignored while publishing to npm<br>  ├─ .travis.yml                  * Travic CI configuration<br>  ├─ LICENSE                      * License details<br>  ├─ README.md                    * README for you library<br>  ├─ gulpfile.js                  * Gulp helper scripts<br>  ├─ karma-test-entry.ts          * Entry script for Karma tests<br>  ├─ karma.conf.ts                * Karma configuration for our unit tests<br>  ├─ package.json                 * NPM dependancies, scripts and package configuration<br>  ├─ tsconfig-aot.json            * TypeScript configuration for AOT build<br>  ├─ tsconfig.json                * TypeScript configuration for UMD and Test builds<br>  ├─ tslint.json                  * TypeScript linting configuration<br>  ├─ webpack-test.config.ts       * Webpack configuration for building test version of the library<br>  ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle<br>  └─ yarn.lock                    * Yarn lock file that locks dependancy versions</code></pre><h1 id="getting-started">Getting Started</h1>
 <h2 id="dependencies">Dependencies</h2>
 <h4 id="node-npm">Node/NPM</h4>
-<p>Install latest Node and NPM following the <a href="https://nodejs.org/en/download/">instructions</a>.</p>
+<p>Install latest Node and NPM following the <a href="https://nodejs.org/en/download/">instructions</a>. Make sure you have Node version ≥ 7.0 and NPM ≥ 4.</p>
 <ul>
 <li><code>brew install node</code> for Mac.</li>
 </ul>
@@ -278,34 +279,49 @@
 </ul>
 <h2 id="installing">Installing</h2>
 <ul>
-<li><code>fork</code> this repo</li>
-<li><code>clone</code> your fork</li>
-<li><code>yarn install</code> to install required dependencies (or <code>npm i</code>)</li>
-<li>Replace the content of <code>src</code> folder with your library sources if you already have ones. Your library must have <code>index.ts</code> file as an entry point for further building.</li>
+<li><code>fork</code> this repo.</li>
+<li><code>clone</code> your fork to your local environment.</li>
+<li><code>yarn install</code> to install required dependencies (or <code>npm i</code>).</li>
+</ul>
+<h2 id="replace-ticktock-library-with-your-own-library">Replace <code>TickTock</code> library with your own library</h2>
+<p>This step may be optional at first since you might just want to play with existing library example.</p>
+<p>Once you&#39;re ready to develop your own library you should do the following.</p>
+<ul>
+<li>Check and re-configure <code>package.json</code> fields like <code>name</code>, <code>version</code>, <code>keywords</code>, <code>description</code> etc. You may read about specifics of npm&#39;s <a href="https://docs.npmjs.com/files/package.json">package.json handling</a> to do that.</li>
+<li>Replace the content of <code>src</code> folder with your library sources. Your library must have <code>index.ts</code> file as an entry point for further building.</li>
+<li>Update <code>demo</code> sources to make them consume your library in case if you want to keep the demo folder.</li>
 </ul>
 <h2 id="build-the-library">Build the library</h2>
 <ul>
-<li><code>yarn build</code> for building the library once</li>
-<li><code>yarn build:watch</code> for building the library and watch for file changes</li>
+<li><code>yarn build</code> for building the library once.</li>
+<li><code>yarn build:watch</code> for building the library and watch for file changes.</li>
 </ul>
 <h2 id="other-commands">Other commands</h2>
 <h4 id="lint-the-code">Lint the code</h4>
 <ul>
-<li><code>yarn lint</code> for performing static code analysis</li>
+<li><code>yarn lint</code> for performing static code analysis.</li>
 </ul>
 <h4 id="test-the-library">Test the library</h4>
 <ul>
-<li><code>yarn test</code> for running all your <code>*.spec.ts</code> tests once</li>
+<li><code>yarn test</code> for running all your <code>*.spec.ts</code> tests once. Generated code coverage report may be found in <code>coverage</code> folder.</li>
 <li><code>yarn test:watch</code> for running all you <code>*.spec.ts</code> and watch for file changes.</li>
 </ul>
 <h4 id="generate-documentation">Generate documentation</h4>
 <ul>
-<li><code>yarn docs</code> for generating documentation locally</li>
-<li><code>yarn gh-pages</code> for generating documentation and uploading it to GitHub Pages</li>
+<li><code>yarn docs</code> for generating documentation locally.</li>
+<li><code>yarn gh-pages</code> for generating documentation and uploading it to GitHub Pages. <a href="https://trekhleb.github.io/angular-library-seed/">Documentation example</a>.</li>
 </ul>
 <h4 id="explore-the-bundle">Explore the bundle</h4>
 <ul>
-<li><code>yarn explore</code> to find out where all your code in bundle is coming from</li>
+<li><code>yarn explorer</code> to find out where all your code in bundle is coming from.</li>
+</ul>
+<h4 id="bump-library-version">Bump library version</h4>
+<ul>
+<li><code>npm version patch</code> to increase library version. <a href="https://docs.npmjs.com/cli/version">More on bumping</a>.</li>
+</ul>
+<h4 id="publish-library-to-npm">Publish library to NPM</h4>
+<ul>
+<li><code>npm publish</code> to publish your library sources on <a href="https://www.npmjs.com/">npmjs.com</a>. Once the library is published it will be <a href="https://www.npmjs.com/package/angular-library-seed">available for usage</a> in npm packages.</li>
 </ul>
 
 
