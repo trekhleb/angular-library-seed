@@ -85,7 +85,7 @@ angular-library-seed
 ## Dependencies
 
 #### Node/NPM
-Install latest Node and NPM following the [instructions](https://nodejs.org/en/download/). Make sure you have Node version >= 7.0 and NPM >= 4.
+Install latest Node and NPM following the [instructions](https://nodejs.org/en/download/). Make sure you have Node version ≥ 7.0 and NPM ≥ 4.
 
 - `brew install node` for Mac.
 
