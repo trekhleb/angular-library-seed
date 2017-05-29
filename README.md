@@ -5,7 +5,7 @@
 
 > Seed project for [Angular](https://angular.io/) libraries that are [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)/[JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) compatible and that use external [SCSS](http://sass-lang.com/)-styles and HTML-templates.
 
-This project contains TickTock library example. The library itself is small and the only thing it does is [displaying current time](http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/). But what **most important** is that the project contains **environment** for the library that allows its building, testing, linting, publishing etc.
+This project contains TickTock library example. The library itself is small and the only thing it does is [displaying current time](http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/) (Plunker example). But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them.
 
 # You might find this project helpful if
 - You want to create library for **Angular 2+**.
@@ -16,13 +16,13 @@ This project contains TickTock library example. The library itself is small and 
 
 # Main Features
 - **AOT/JIT** compatible library build via [Angular Compiler](https://www.npmjs.com/package/@angular/compiler-cli) (ngc).
-- **UMD** build via [Webpack](https://webpack.js.org/).
+- **UMD** build via [Webpack](https://webpack.js.org/) that allows you to use your library for browser builds. You may play with it on [Plunker](http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/).
 - **Testing** with [Karma](https://karma-runner.github.io/1.0/index.html) and [Jasmine](https://jasmine.github.io/).
 - **Test coverage** report via [Istanbul](https://github.com/gotwarlost/istanbul).
 - **Watch modes** for building and testing procedures that makes developing process easier.
 - **Linting** with [TSLint](https://palantir.github.io/tslint/) and [Codelyzer](https://github.com/mgechev/codelyzer) for static code analysis.
 - **Exploring your build** via [Sourcemap Explorer](https://www.npmjs.com/package/source-map-explorer) that shows you a treemap visualization to help you debug where all the code is coming from. 
-- **Documentation generation** via [Compodoc](https://github.com/compodoc/compodoc).
+- **Documentation generation** via [Compodoc](https://github.com/compodoc/compodoc). Take a look at [documentation example](https://trekhleb.github.io/angular-library-seed/).
 - **Documentation hosting**  via [GitHub Pages](https://pages.github.com/).
 - **AOT/JIT/UMD demos** via [Webpack](https://webpack.js.org/) and [SystemJS](https://github.com/systemjs/systemjs) that allows you to test library builds.
 - **Continuous integration** with [Travis CI](https://travis-ci.org/).
@@ -62,3 +62,27 @@ angular-library-seed
   ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle
   └─ yarn.lock                    * Yarn lock file that locks dependancy versions
 ```
+
+# Getting Started
+
+## Dependencies
+
+### Node/NPM
+Install latest Node and NPM following the [instructions](https://nodejs.org/en/download/).
+
+- `brew install node` for Mac.
+
+### Yarn
+[Yarn package manager](https://yarnpkg.com/en/) is optional but highly recommended. It installs library dependencies faster and also locks theirs versions. It has [more advantages](https://yarnpkg.com/en/) but these two are pretty attractive. 
+
+Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install).
+
+- `brew install yarn` for Mac.
+
+If you prefer to work with `npm` directly you may ignore this step.
+
+## Installing
+
+- `fork` this repo
+- `clone` your fork
+- `yarn install` to install required dependencies (or `npm i`)
