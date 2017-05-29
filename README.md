@@ -31,28 +31,34 @@ This project contains TickTock library example. The library itself is small and 
 
 ```
 angular-library-seed
-  ├─ demo
-  |  ├─ esm
-  |  ├─ umd
-  |  ├─ .gitignore
-  |  ├─ gulpfile.js
-  |  ├─ package.json
-  |  └─ yarn.lock
-  ├─ src
-  ├─ .editorconfig
-  ├─ .gitignore	
-  ├─ .npmignore
-  ├─ .travis.yml
-  ├─ LICENSE
-  ├─ README.md
-  ├─ gulpfile.js
-  ├─ karma-test-entry.ts
-  ├─ karma.conf.ts
-  ├─ package.json
-  ├─ tsconfig-aot.json
-  ├─ tsconfig.json
-  ├─ tslint.json
-  ├─ webpack-test.config.ts
-  ├─ webpack-umd.config.ts
-  └─ yarn.lock
+  ├─ demo                         * Folder for demo applications (may be simply deleted if not required) 
+  |  ├─ esm                       * AOT/JIT demo project
+  |  ├─ umd                       * UMD demo project
+  |  ├─ .gitignore                * List of files that are ignored while publishing to git repo
+  |  ├─ gulpfile.js               * Gulp helper scripts for building demos
+  |  ├─ package.json              * NPM dependencies and helper scripts for building demos
+  |  └─ yarn.lock                 * Yarn dependency versions lock for demo applications
+  |
+  ├─ src                          * Library sources home folder (the place for your library)
+  |  ├─ components                * Example of library components with tests
+  |  ├─ services                  * Example of library services with tests
+  |  ├─ index.ts                  * Library entry point that is used by builders
+  |  └─ tick-tock.module.ts       * Example of library module
+  |
+  ├─ .editorconfig                * Common IDE configuration
+  ├─ .gitignore	                  * List of files that are ignored while publishing to git repo
+  ├─ .npmignore                   * List of files that are ignored while publishing to npm
+  ├─ .travis.yml                  * Travic CI configuration
+  ├─ LICENSE                      * License details
+  ├─ README.md                    * README for you library
+  ├─ gulpfile.js                  * Gulp helper scripts
+  ├─ karma-test-entry.ts          * Entry script for Karma tests
+  ├─ karma.conf.ts                * Karma configuration for our unit tests
+  ├─ package.json                 * NPM dependancies, scripts and package configuration
+  ├─ tsconfig-aot.json            * TypeScript configuration for AOT build
+  ├─ tsconfig.json                * TypeScript configuration for UMD and Test builds
+  ├─ tslint.json                  * TypeScript linting configuration
+  ├─ webpack-test.config.ts       * Webpack configuration for building test version of the library
+  ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle
+  └─ yarn.lock                    * Yarn lock file that locks dependancy versions
 ```
