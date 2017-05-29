@@ -31,7 +31,7 @@ This project contains TickTock library example. The library itself is small and 
 
 ```
 angular-library-seed
-  ├─ demo                         * Folder for demo applications (may be simply deleted if not required) 
+  ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) 
   |  ├─ esm                       * AOT/JIT demo project
   |  ├─ umd                       * UMD demo project
   |  ├─ .gitignore                * List of files that are ignored while publishing to git repo
@@ -39,7 +39,7 @@ angular-library-seed
   |  ├─ package.json              * NPM dependencies and helper scripts for building demos
   |  └─ yarn.lock                 * Yarn dependency versions lock for demo applications
   |
-  ├─ src                          * Library sources home folder (the place for your library)
+  ├─ src                          * Library sources home folder (THE PLACE FOR YOUR LIBRARY SOURCES)
   |  ├─ components                * Example of library components with tests
   |  ├─ services                  * Example of library services with tests
   |  ├─ index.ts                  * Library entry point that is used by builders
