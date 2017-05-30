@@ -1,9 +1,9 @@
-# Demo projects for `angular-library-seed`
+# `angular-library-seed` demo projects
 
-> This folder contains two demo-project (ESM and UMD related) that may help you test your library against
- - AOT build.
- - ESM build.
- - UMD bundle usage by SystemJS
+> This folder contains two demo-projects (ESM and UMD related) for [angular-library-seed](https://github.com/trekhleb/angular-library-seed) that may help you test your library against
+> - [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) (ahead-of-time) project build.
+> - [JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) (just-in-time) project build.
+> - [UMD](https://github.com/umdjs/umd) bundle usage by [SystemJS](https://github.com/systemjs/systemjs).
 
 # Quick Start
 
