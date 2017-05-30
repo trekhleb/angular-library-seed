@@ -26,16 +26,16 @@ yarn build
 angular-library-seed
   └─ demo                           * Folder for demo applications (MAY BE DELETED if not required) 
      ├─ esm                         * AOT/JIT demo project
-     |  └─ dist
-     |  |  ├─ aot
-     |  |  |  └─ index.html 
+     |  └─ dist                     * This folder will contain project ESM builds
+     |  |  ├─ aot                   * This folder contains project build made via AOT compilation
+     |  |  |  └─ index.html         * <-- RUN THIS FILE TO CHECK AOT BUILD
      |  |  |
-     |  |  └─ aot
-     |  |     └─ index.html 
+     |  |  └─ jit                   * This folder contains project build made via JIT compilation
+     |  |     └─ index.html         * <-- RUN THIS FILE TO CHECK JIT BUILD
      |  |
-     |  ├─ lib
+     |  ├─ lib                      * Temporary folder with a copy of your library built sources
      |  ├─ src
-     |  |  ├─ app
+     |  |  ├─ app                   * Demo application sources. Adopt them with your library.
      |  |  ├─ index.ejs
      |  |  ├─ main-aot.ts
      |  |  ├─ main-jit.ts
@@ -47,9 +47,9 @@ angular-library-seed
      |  └─ webpack.config.js
      |   
      ├─ umd                         * UMD demo project
-     |  ├─ app
-     |  ├─ lib
-     |  ├─ index.html
+     |  ├─ app                      * Demo application sources. Adopt them with your library.
+     |  ├─ lib                      * Temporary folder with a copy of your library built sources
+     |  ├─ index.html               * <-- RUN THIS FILE TO CHECK UMD BUILD
      |  ├─ main.ts
      |  └─ systemjs.config.js
      |   
