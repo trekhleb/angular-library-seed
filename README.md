@@ -51,10 +51,7 @@ angular-library-seed
   ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) 
   |  ├─ esm                       * AOT/JIT demo project
   |  ├─ umd                       * UMD demo project
-  |  ├─ .gitignore                * List of files that are ignored while publishing to git repo
-  |  ├─ gulpfile.js               * Gulp helper scripts for building demos
-  |  ├─ package.json              * NPM dependencies and helper scripts for building demos
-  |  └─ yarn.lock                 * Yarn dependency versions lock for demo applications
+  |  └─ ...                       * More details about this folder may be found in demo folder README file.
   |
   ├─ src                          * Library sources home folder (THE PLACE FOR YOUR LIBRARY SOURCES)
   |  ├─ components                * Example of library components with tests
@@ -150,3 +147,9 @@ You may also build UMD bundle and ESM files separately:
 #### Cleaning
 - `yarn clean:tmp` command will clean up all temporary files like `docs`, `dist`, `coverage` etc.
 - `yarn clean:all` command will clean up all temporary files along with `node_modules` folder. 
+
+# Development workflow
+
+### Developing library using demo applications
+
+### Developing library using npm link

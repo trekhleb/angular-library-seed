@@ -13,7 +13,7 @@
 # Install all dependencies
 yarn install
 
-# Start watching library dist folder and do JIT project build.
+# Start watching library dist folder and do JIT project build in watch mode.
 yarn start
 
 # Or you may simply build AOT/JIT/UMD versions all at once by running the following command
@@ -69,38 +69,39 @@ Install latest Node and NPM following the [instructions](https://nodejs.org/en/d
 - `brew install node` for Mac.
 
 #### Yarn
-[Yarn package manager](https://yarnpkg.com/en/) is optional but highly recommended. If you prefer to work with `npm` directly you may ignore this step.
-
-Yarn installs library dependencies faster and also locks theirs versions. It has [more advantages](https://yarnpkg.com/en/) but these two are already pretty attractive. 
-
 Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install).
 
 - `brew install yarn` for Mac.
 
 ## Installing
 - Switch to `demo` folder in your console.
-- `yarn install` to install required dependencies (or `npm i`).
+- `yarn install` to install required dependencies.
 
-## Replace `TickTock` library with your own library
-This step may be optional at first since you might just want to play with existing library example.
+## Replace `TickTock` library with your own library mentions
+This step may be optional at first since you might just want to build demo projects with TickTock library example.
 
 Once you're ready to develop your own library you should do the following.
-- Check and re-configure `package.json` fields like `name`, `version`, `keywords`, `description` etc. You may read about specifics of npm's [package.json handling](https://docs.npmjs.com/files/package.json) to do that.
-- Replace the content of `src` folder with your library sources. Your library must have `index.ts` file as an entry point for further building.
-- Update `demo` sources to make them consume your library in case if you want to keep the demo folder.
+- Adjust source codes of `angular-library-seed/demo/esm/src/app/*.ts` files for AOT/JIT builds.
+- Adjust source codes of `angular-library-seed/demo/umd/app/*.ts` files for UMD builds.
 
-## Build the projects
-- `yarn build` for building the library once (both ESM and AOT versions).
-- `yarn build:watch` for building the library (both ESM and AOT versions) and watch for file changes.
+## Build demo projects
+- `yarn build` for building AOT, JIT and UMD demo versions all at once.
 
-You may also build UMD bundle and ESM files separately:
-- `yarn build:esm` - for building AOT/JIT compatible versions of files.
-- `yarn build:esm:watch` - the same as previous command but in watch-mode.
-- `yarn build:umd` - for building UMD bundle only.
-- `yarn build:umd:watch` - the same as previous command but in watch-mode.
+You may also build projects separately:
+- `yarn build:jit` - for building JIT version of demo project.
+- `yarn build:aot` - for building AOT version of demo project.
+- `yarn build:umd` - for building UMD version of demo project.
+
+To see your library in action check following paths:
+- `angular-library-seed/demo/esm/dist/jit/index.html` file for JIT build
+- `angular-library-seed/demo/esm/dist/aot/index.html` file for AOT build
+- `angular-library-seed/demo/umd/index.html` file for UMD build
+
+## Build JIT project in start watch mode
+- `yarn start` for building JIT version of demo project and start watching for library changes.
 
 ## Other commands
 
 #### Cleaning
-- `yarn clean:tmp` command will clean up all temporary files like `docs`, `dist`, `coverage` etc.
+- `yarn clean:tmp` command will clean up all temporary files like `dist`, `lib`, `*.ngsummary.json` etc.
 - `yarn clean:all` command will clean up all temporary files along with `node_modules` folder. 
