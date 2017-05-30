@@ -1,6 +1,6 @@
 # `angular-library-seed` demo projects
 
-> This folder contains two demo-projects (ESM and UMD related) for [angular-library-seed](https://github.com/trekhleb/angular-library-seed) that may help you test your library against
+> This folder contains two demo-projects (ESM and UMD related) for [angular-library-seed](https://github.com/trekhleb/angular-library-seed) that may help you test your library against:
 > - [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) (ahead-of-time) project build.
 > - [JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) (just-in-time) project build.
 > - [UMD](https://github.com/umdjs/umd) bundle usage by [SystemJS](https://github.com/systemjs/systemjs).
@@ -8,13 +8,15 @@
 # Quick Start
 
 ```bash
-# Assuming the yor are already in angular-library-seed folder
-cd demo
+# Assuming the yor are already in angular-library-seed/demo folder
 
 # Install all dependencies
 yarn install
 
-# Build all projects
+# Start watching library dist folder and do JIT project build.
+yarn start
+
+# Or you may simply build AOT/JIT/UMD versions all at once by running the following command
 yarn build
 ```
 
@@ -22,13 +24,39 @@ yarn build
 
 ```
 angular-library-seed
-  └─ demo                         * Folder for demo applications (MAY BE DELETED if not required) 
-     ├─ esm                       * AOT/JIT demo project
-     ├─ umd                       * UMD demo project
-     ├─ .gitignore                * List of files that are ignored while publishing to git repo
-     ├─ gulpfile.js               * Gulp helper scripts for building demos
-     ├─ package.json              * NPM dependencies and helper scripts for building demos
-     └─ yarn.lock                 * Yarn dependency versions lock for demo applications
+  └─ demo                           * Folder for demo applications (MAY BE DELETED if not required) 
+     ├─ esm                         * AOT/JIT demo project
+     |  └─ dist
+     |  |  ├─ aot
+     |  |  |  └─ index.html 
+     |  |  |
+     |  |  └─ aot
+     |  |     └─ index.html 
+     |  |
+     |  ├─ lib
+     |  ├─ src
+     |  |  ├─ app
+     |  |  ├─ index.ejs
+     |  |  ├─ main-aot.ts
+     |  |  ├─ main-jit.ts
+     |  |  └─ polyfills.browser.ts
+     |  |
+     |  ├─ tsconfig-aot.json
+     |  ├─ tsconfig.json
+     |  ├─ webpack-aot.config.js
+     |  └─ webpack.config.js
+     |   
+     ├─ umd                         * UMD demo project
+     |  ├─ app
+     |  ├─ lib
+     |  ├─ index.html
+     |  ├─ main.ts
+     |  └─ systemjs.config.js
+     |   
+     ├─ .gitignore                  * List of files that are ignored while publishing to git repo
+     ├─ gulpfile.js                 * Gulp helper scripts for building demos
+     ├─ package.json                * NPM dependencies and helper scripts for building demos
+     └─ yarn.lock                   * Yarn dependency versions lock for demo applications
 ```
 
 # Getting Started
