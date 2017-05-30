@@ -112,8 +112,14 @@ Once you're ready to develop your own library you should do the following.
 - Update `demo` sources to make them consume your library in case if you want to keep the demo folder.
 
 ## Build the library
-- `yarn build` for building the library once.
+- `yarn build` for building the library once (both ESM and AOT versions).
 - `yarn build:watch` for building the library and watch for file changes.
+
+You may also build UMD bundle and ESM files separately:
+- `yarn build:esm` - for building AOT/JIT compatible versions of files.
+- `yarn build:esm:watch` - the same as previous command but in watch-mode.
+- `yarn build:umd` - for building UMD bundle only.
+- `yarn build:umd:watch` - the same as previous command but in watch-mode.
 
 ## Other commands
 
