@@ -36,22 +36,22 @@ angular-library-seed
      |  ├─ lib                      * Temporary folder with a copy of your library built sources
      |  ├─ src
      |  |  ├─ app                   * Demo application sources. Adopt them with your library.
-     |  |  ├─ index.ejs
-     |  |  ├─ main-aot.ts
-     |  |  ├─ main-jit.ts
-     |  |  └─ polyfills.browser.ts
+     |  |  ├─ index.ejs             * Main application template.
+     |  |  ├─ main-aot.ts           * AOT main entry.
+     |  |  ├─ main-jit.ts           * JIT main entry.
+     |  |  └─ polyfills.browser.ts  * Browser polyfills.
      |  |
-     |  ├─ tsconfig-aot.json
-     |  ├─ tsconfig.json
-     |  ├─ webpack-aot.config.js
-     |  └─ webpack.config.js
+     |  ├─ tsconfig-aot.json        * TypeScript configuration for AOT build.
+     |  ├─ tsconfig.json            * TypeScript configuration for JIT build.
+     |  ├─ webpack-aot.config.js    * Webpack configuration for AOT build.
+     |  └─ webpack.config.js        * Webpack configuration for JIT build.
      |   
      ├─ umd                         * UMD demo project
      |  ├─ app                      * Demo application sources. Adopt them with your library.
      |  ├─ lib                      * Temporary folder with a copy of your library built sources
      |  ├─ index.html               * <-- RUN THIS FILE TO CHECK UMD BUILD
-     |  ├─ main.ts
-     |  └─ systemjs.config.js
+     |  ├─ main.ts                  * Main application entry file.
+     |  └─ systemjs.config.js       * SystemJS configuration.
      |   
      ├─ .gitignore                  * List of files that are ignored while publishing to git repo
      ├─ gulpfile.js                 * Gulp helper scripts for building demos
