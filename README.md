@@ -113,7 +113,7 @@ Once you're ready to develop your own library you should do the following.
 
 ## Build the library
 - `yarn build` for building the library once (both ESM and AOT versions).
-- `yarn build:watch` for building the library and watch for file changes.
+- `yarn build:watch` for building the library (both ESM and AOT versions) and watch for file changes.
 
 You may also build UMD bundle and ESM files separately:
 - `yarn build:esm` - for building AOT/JIT compatible versions of files.
