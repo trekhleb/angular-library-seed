@@ -134,9 +134,13 @@ Once you're ready to develop your own library you should do the following.
 #### Bump library version
 - `npm version patch` to increase library version. [More on bumping](https://docs.npmjs.com/cli/version).
 
-`preversion` script in this case will automatically run project testing and linting in prior in order to check the the library is ready for publishing.
+`preversion` script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.
 
 #### Publish library to NPM
 - `npm publish` to publish your library sources on [npmjs.com](https://www.npmjs.com/). Once the library is published it will be [available for usage](https://www.npmjs.com/package/angular-library-seed) in npm packages.
 
-`prepublishOnly` script in this case will automatically run project testing and linting in prior in order to check the the library is ready for publishing.
+`prepublishOnly` script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.
+
+#### Cleaning
+- `yarn clean:tmp` command will clean up all temporary files like `docs`, `dist`, `coverage` etc.
+- `yarn clean:all` command will clean up all temporary files along with `node_modules` folder. 
