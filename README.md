@@ -160,8 +160,6 @@ There are several ways to go here:
 
 ### Using `npm link` (preferable)
 
-You might use Angular project that is build, for example, with [Angular-CLI](https://cli.angular.io/) to debug your library in browser. Read [Angular-CLI documentation](https://cli.angular.io/) for more details on how to generate Angular project.
-
 In you library root folder:
 
 ```bash
