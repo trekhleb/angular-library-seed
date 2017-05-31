@@ -151,6 +151,32 @@ You may also build UMD bundle and ESM files separately:
 
 # Library development workflow
 
+### Using `npm link` (preferable)
+
+In you library root folder: 
+
+```bash
+# Create npm link
+npm link
+
+# Build library in watch mode
+yarn build:watch
+```
+
+In you project folder:
+
+```bash
+# Link you library to the project
+npm link angular-library-seed
+
+# Build your project with whatever the build command is. Let's say with...
+npm start
+```
+
+Then you need to import your library into your project's source code.
+
+[More information](https://docs.npmjs.com/cli/link) about `npm link` command.
+
 ### Using demo applications
 
 You may take advantage of watch-modes for both library build and [demo-projects](https://github.com/trekhleb/angular-library-seed/tree/master/demo) builds in order to see changes to your library's source code immediately in your browser.
@@ -163,5 +189,3 @@ To do so you need to:
 As a result once you change library source code it will be automatically re-compiled and in turn your JIT demo-project will be automatically re-built and you will be able to see that changes in your browser instantly.
 
 For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/trekhleb/angular-library-seed/tree/master/demo).
-
-### Using `npm link`
