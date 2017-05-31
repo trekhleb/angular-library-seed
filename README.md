@@ -175,6 +175,8 @@ npm start
 
 Then you need to import your library into your project's source code.
 
+Now, once you update your library source code it will automatically be re-compiled and your project may be re-built automatically depending on its watch-mode support.
+
 [More information](https://docs.npmjs.com/cli/link) about `npm link` command.
 
 ### Using demo applications
