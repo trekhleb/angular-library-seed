@@ -155,7 +155,7 @@ In order to debug your library in browser you need to have Angular project that 
 
 There are several ways to go here:
 - Use your **real library-consumer project** and link your library to it via `npm link` command (see below).
-- Use [Angular-CLI](https://cli.angular.io/) to generate library-consumer project for you and use the same `npm link` command to link your library to it
+- Use [Angular-CLI](https://cli.angular.io/) to generate library-consumer project for you and use the same `npm link` command to link your library to it.
 - Use [demo applications](https://github.com/trekhleb/angular-library-seed/tree/master/demo) that are provided for your convenience as a part of this repository.
 
 ### Using `npm link` (preferable)
