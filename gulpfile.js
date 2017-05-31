@@ -45,7 +45,7 @@ gulp.task('build:esm', ['inline-templates'], (callback) => {
  * This is a temporary solution until ngc is supported --watch mode.
  * @see: https://github.com/angular/angular/issues/12867
  */
-gulp.task('build:esm:watch', () => {
+gulp.task('build:esm:watch', ['build:esm'], () => {
   gulp.watch('src/**/*', ['build:esm']);
 });
 
