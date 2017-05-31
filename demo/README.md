@@ -13,7 +13,7 @@ Demo-projects are created as an alternative to `npm link` command. You may simpl
 # Quick Start
 
 ```bash
-# Assuming the yor are already in angular-library-seed/demo folder
+# Assuming the you are already in angular-library-seed/demo folder
 
 # Install all dependencies
 yarn install
@@ -58,7 +58,7 @@ angular-library-seed
      |  ├─ main.ts                  * Main application entry file.
      |  └─ systemjs.config.js       * SystemJS configuration.
      |   
-     ├─ .gitignore                  * List of files that are ignored while publishing to git repo
+     ├─ .gitignore                  * List of files that are ignored while publishing to git repository
      ├─ gulpfile.js                 * Gulp helper scripts for building demos
      ├─ package.json                * NPM dependencies and helper scripts for building demos
      └─ yarn.lock                   * Yarn dependency versions lock for demo applications

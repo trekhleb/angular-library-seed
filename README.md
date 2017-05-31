@@ -32,10 +32,10 @@ This project contains TickTock library example. The library itself is small and 
 # Quick Start
 
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/trekhleb/angular-library-seed.git
 
-# Go to repo folder
+# Go to repository folder
 cd angular-library-seed
 
 # Install all dependencies
@@ -97,7 +97,7 @@ Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install
 - `brew install yarn` for Mac.
 
 ## Installing
-- `fork` this repo.
+- `fork` this repository.
 - `clone` your fork to your local environment.
 - `yarn install` to install required dependencies (or `npm i`).
 
