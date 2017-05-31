@@ -151,9 +151,18 @@ You may also build UMD bundle and ESM files separately:
 
 # Library development workflow
 
+In order to debug your library in browser you need to have Angular project that will consume your library, build the application and display it. For your convenience all of that should happen automatically in background so once you change library source code you should instantly see the changes in browser.
+
+There are several ways to go here:
+- Use your **real library-consumer project** and link your library to it via `npm link` command (see below).
+- Use [Angular-CLI](https://cli.angular.io/) to generate library-consumer project for you and use the same `npm link` command to link your library to it
+- Use [demo applications](https://github.com/trekhleb/angular-library-seed/tree/master/demo) that are provided for your convenience as a part of this repository.
+
 ### Using `npm link` (preferable)
 
-In you library root folder: 
+You might use Angular project that is build, for example, with [Angular-CLI](https://cli.angular.io/) to debug your library in browser. Read [Angular-CLI documentation](https://cli.angular.io/) for more details on how to generate Angular project.
+
+In you library root folder:
 
 ```bash
 # Create npm link
@@ -163,19 +172,19 @@ npm link
 yarn build:watch
 ```
 
-In you project folder:
+In you project folder that should consume the library:
 
 ```bash
 # Link you library to the project
 npm link angular-library-seed
 
-# Build your project with whatever the build command is. Let's say with...
-npm start
+# Build your project. In case of Angular-CLI use the following command.
+ng serve
 ```
 
 Then you need to import your library into your project's source code.
 
-Now, once you update your library source code it will automatically be re-compiled and your project may be re-built automatically depending on its watch-mode support.
+Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.
 
 [More information](https://docs.npmjs.com/cli/link) about `npm link` command.
 
