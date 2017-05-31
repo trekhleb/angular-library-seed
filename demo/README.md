@@ -95,7 +95,7 @@ You may also build projects separately:
 - `yarn build:aot` - for building AOT version of demo project.
 - `yarn build:umd` - for building UMD version of demo project.
 
-To see your library in action check following paths:
+To see your library in action launch the following files in your browser:
 - `angular-library-seed/demo/esm/dist/jit/index.html` file for JIT build
 - `angular-library-seed/demo/esm/dist/aot/index.html` file for AOT build
 - `angular-library-seed/demo/umd/index.html` file for UMD build
