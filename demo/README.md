@@ -8,6 +8,8 @@
 >
 > - `umd` folder contains Angular project that is being built and assembled in browser by [SystemJS](https://github.com/systemjs/systemjs). This demo project utilizes [UMD](https://github.com/umdjs/umd) bundle of your library.
 
+Demo-projects are created as an alternative to `npm link` command. You may simply delete this `demo` folder if you prefer to use [npm link](https://docs.npmjs.com/cli/link) instead to check how your library is being built.
+
 # Quick Start
 
 ```bash
