@@ -100,8 +100,10 @@ To see your library in action launch the following files in your browser:
 - `angular-library-seed/demo/esm/dist/aot/index.html` file for AOT build
 - `angular-library-seed/demo/umd/index.html` file for UMD build
 
-## Build JIT project in start watch mode
+## Build JIT project in watch mode
 - `yarn start` for building JIT version of demo project and start watching for library changes.
+
+This command may be used simultaneously in combination with [angular-library-seed](https://github.com/trekhleb/angular-library-seed)'s `yarn build:watch`. As a result once you change library source code it will be automatically re-compiled and in turn your JIT demo-project will be automatically re-built and you will be able to see that changes in your browser instantly. See [Development Workflow](https://github.com/trekhleb/angular-library-seed#development-workflow) section of [angular-library-seed](https://github.com/trekhleb/angular-library-seed)'s README for more details.
 
 ## Other commands
 
