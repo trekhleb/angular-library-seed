@@ -69,13 +69,13 @@ angular-library-seed
   ├─ gulpfile.js                  * Gulp helper scripts
   ├─ karma-test-entry.ts          * Entry script for Karma tests
   ├─ karma.conf.ts                * Karma configuration for our unit tests
-  ├─ package.json                 * NPM dependancies, scripts and package configuration
+  ├─ package.json                 * NPM dependencies, scripts and package configuration
   ├─ tsconfig-aot.json            * TypeScript configuration for AOT build
   ├─ tsconfig.json                * TypeScript configuration for UMD and Test builds
   ├─ tslint.json                  * TypeScript linting configuration
   ├─ webpack-test.config.ts       * Webpack configuration for building test version of the library
   ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle
-  └─ yarn.lock                    * Yarn lock file that locks dependancy versions
+  └─ yarn.lock                    * Yarn lock file that locks dependency versions
 ```
 
 # Getting Started
