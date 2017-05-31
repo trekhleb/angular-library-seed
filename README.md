@@ -149,9 +149,9 @@ You may also build UMD bundle and ESM files separately:
 - `yarn clean:tmp` command will clean up all temporary files like `docs`, `dist`, `coverage` etc.
 - `yarn clean:all` command will clean up all temporary files along with `node_modules` folder. 
 
-# Development workflow
+# Library development workflow
 
-### Developing library using demo applications
+### Using demo applications
 
 You may take advantage of watch-modes for both library build and [demo-projects](https://github.com/trekhleb/angular-library-seed/tree/master/demo) builds in order to see changes to your library's source code immediately in your browser.
 
@@ -164,4 +164,4 @@ As a result once you change library source code it will be automatically re-comp
 
 For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/trekhleb/angular-library-seed/tree/master/demo).
 
-### Developing library using `npm link`
+### Using `npm link`
