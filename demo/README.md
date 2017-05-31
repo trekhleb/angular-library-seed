@@ -80,7 +80,7 @@ Install Yarn by following the [instructions](https://yarnpkg.com/en/docs/install
 - Switch to `demo` folder in your console.
 - `yarn install` to install required dependencies.
 
-## Replace `TickTock` library with your own library mentions
+## Replace `TickTock` library related code with your own library tags and imports
 This step may be optional at first since you might just want to build demo projects with TickTock library example.
 
 Once you're ready to develop your own library you should do the following.
