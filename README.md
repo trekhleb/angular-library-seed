@@ -164,4 +164,4 @@ As a result once you change library source code it will be automatically re-comp
 
 For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/trekhleb/angular-library-seed/tree/master/demo).
 
-### Developing library using npm link
+### Developing library using `npm link`
