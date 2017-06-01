@@ -163,7 +163,7 @@ There are several ways to go here:
 In you library root folder:
 
 ```bash
-# Create npm link
+# Create symbolic link
 yarn link
 
 # Build library in watch mode
