@@ -233,7 +233,7 @@
                <div class="content readme">
                    <div class="content-data">
 <h1 id="-angular-library-seed-the-starter-for-angular-libraries"><code>angular-library-seed</code> - the starter for Angular libraries</h1>
-<p><a href="https://travis-ci.org/trekhleb/angular-library-seed"><img src="https://travis-ci.org/trekhleb/angular-library-seed.svg?branch=master" alt="Build Status" class="img-responsive"></a><br><a href="https://codecov.io/gh/trekhleb/angular-library-seed"><img src="https://codecov.io/gh/trekhleb/angular-library-seed/branch/master/graph/badge.svg" alt="codecov" class="img-responsive"></a></p>
+<p><a href="https://travis-ci.org/trekhleb/angular-library-seed"><img src="https://travis-ci.org/trekhleb/angular-library-seed.svg?branch=master" alt="Build Status" class="img-responsive"></a><br><a href="https://codecov.io/gh/trekhleb/angular-library-seed"><img src="https://codecov.io/gh/trekhleb/angular-library-seed/branch/master/graph/badge.svg" alt="codecov" class="img-responsive"></a><br><a href="https://badge.fury.io/js/angular-library-seed"><img src="https://badge.fury.io/js/angular-library-seed.svg" alt="npm version" class="img-responsive"></a></p>
 <blockquote>
 <p>Seed project for <a href="https://angular.io/">Angular</a> libraries that are <a href="https://angular.io/docs/ts/latest/cookbook/aot-compiler.html">AOT</a>/<a href="https://angular.io/docs/ts/latest/cookbook/aot-compiler.html">JIT</a> compatible and that use external <a href="http://sass-lang.com/">SCSS</a>-styles and HTML-templates.</p>
 </blockquote>
@@ -262,8 +262,8 @@
 <li><strong>Code coverage</strong> badge via <a href="https://codecov.io">Codecov</a> as a reminder to cover code with tests.</li>
 </ul>
 <h1 id="quick-start">Quick Start</h1>
-<pre><code class="hljs bash"><span class="hljs-comment"># Clone the repo</span><br>git <span class="hljs-built_in">clone</span> https://github.com/trekhleb/angular-library-seed.git<br><br><span class="hljs-comment"># Go to repo folder</span><br><span class="hljs-built_in">cd</span> angular-library-seed<br><br><span class="hljs-comment"># Install all dependencies</span><br>yarn install<br><br><span class="hljs-comment"># Build the library</span><br>yarn build</code></pre><h1 id="file-structure">File Structure</h1>
-<pre><code class="hljs undefined">angular-library-seed<br>  ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) <br>  |  ├─ esm                       * AOT/JIT demo project<br>  |  ├─ umd                       * UMD demo project<br>  |  ├─ .gitignore                * List of files that are ignored while publishing to git repo<br>  |  ├─ gulpfile.js               * Gulp helper scripts for building demos<br>  |  ├─ package.json              * NPM dependencies and helper scripts for building demos<br>  |  └─ yarn.lock                 * Yarn dependency versions lock for demo applications<br>  |<br>  ├─ src                          * Library sources home folder (THE PLACE FOR YOUR LIBRARY SOURCES)<br>  |  ├─ components                * Example of library components with tests<br>  |  ├─ services                  * Example of library services with tests<br>  |  ├─ index.ts                  * Library entry point that is used by builders<br>  |  └─ tick-tock.module.ts       * Example of library module<br>  |<br>  ├─ .editorconfig                * Common IDE configuration<br>  ├─ .gitignore                      * List of files that are ignored while publishing to git repo<br>  ├─ .npmignore                   * List of files that are ignored while publishing to npm<br>  ├─ .travis.yml                  * Travic CI configuration<br>  ├─ LICENSE                      * License details<br>  ├─ README.md                    * README for you library<br>  ├─ gulpfile.js                  * Gulp helper scripts<br>  ├─ karma-test-entry.ts          * Entry script for Karma tests<br>  ├─ karma.conf.ts                * Karma configuration for our unit tests<br>  ├─ package.json                 * NPM dependancies, scripts and package configuration<br>  ├─ tsconfig-aot.json            * TypeScript configuration for AOT build<br>  ├─ tsconfig.json                * TypeScript configuration for UMD and Test builds<br>  ├─ tslint.json                  * TypeScript linting configuration<br>  ├─ webpack-test.config.ts       * Webpack configuration for building test version of the library<br>  ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle<br>  └─ yarn.lock                    * Yarn lock file that locks dependancy versions</code></pre><h1 id="getting-started">Getting Started</h1>
+<pre><code class="hljs bash"><span class="hljs-comment"># Clone the repository</span><br>git <span class="hljs-built_in">clone</span> https://github.com/trekhleb/angular-library-seed.git<br><br><span class="hljs-comment"># Go to repository folder</span><br><span class="hljs-built_in">cd</span> angular-library-seed<br><br><span class="hljs-comment"># Install all dependencies</span><br>yarn install<br><br><span class="hljs-comment"># Build the library</span><br>yarn build</code></pre><h1 id="file-structure">File Structure</h1>
+<pre><code class="hljs undefined">angular-library-seed<br>  ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) <br>  |  ├─ esm                       * AOT/JIT demo project<br>  |  ├─ umd                       * UMD demo project<br>  |  └─ ...                       * More details about this folder may be found in demo folder README file.<br>  |<br>  ├─ src                          * Library sources home folder (THE PLACE FOR YOUR LIBRARY SOURCES)<br>  |  ├─ components                * Example of library components with tests<br>  |  ├─ services                  * Example of library services with tests<br>  |  ├─ index.ts                  * Library entry point that is used by builders<br>  |  └─ tick-tock.module.ts       * Example of library module<br>  |<br>  ├─ .editorconfig                * Common IDE configuration<br>  ├─ .gitignore                      * List of files that are ignored while publishing to git repo<br>  ├─ .npmignore                   * List of files that are ignored while publishing to npm<br>  ├─ .travis.yml                  * Travic CI configuration<br>  ├─ LICENSE                      * License details<br>  ├─ README.md                    * README for you library<br>  ├─ gulpfile.js                  * Gulp helper scripts<br>  ├─ karma-test-entry.ts          * Entry script for Karma tests<br>  ├─ karma.conf.ts                * Karma configuration for our unit tests<br>  ├─ package.json                 * NPM dependencies, scripts and package configuration<br>  ├─ tsconfig-aot.json            * TypeScript configuration for AOT build<br>  ├─ tsconfig.json                * TypeScript configuration for UMD and Test builds<br>  ├─ tslint.json                  * TypeScript linting configuration<br>  ├─ webpack-test.config.ts       * Webpack configuration for building test version of the library<br>  ├─ webpack-umd.config.ts        * Webpack configuration for building UMD bundle<br>  └─ yarn.lock                    * Yarn lock file that locks dependency versions</code></pre><h1 id="getting-started">Getting Started</h1>
 <h2 id="dependencies">Dependencies</h2>
 <h4 id="node-npm">Node/NPM</h4>
 <p>Install latest Node and NPM following the <a href="https://nodejs.org/en/download/">instructions</a>. Make sure you have Node version ≥ 7.0 and NPM ≥ 4.</p>
@@ -279,7 +279,7 @@
 </ul>
 <h2 id="installing">Installing</h2>
 <ul>
-<li><code>fork</code> this repo.</li>
+<li><code>fork</code> this repository.</li>
 <li><code>clone</code> your fork to your local environment.</li>
 <li><code>yarn install</code> to install required dependencies (or <code>npm i</code>).</li>
 </ul>
@@ -293,8 +293,15 @@
 </ul>
 <h2 id="build-the-library">Build the library</h2>
 <ul>
-<li><code>yarn build</code> for building the library once.</li>
-<li><code>yarn build:watch</code> for building the library and watch for file changes.</li>
+<li><code>yarn build</code> for building the library once (both ESM and AOT versions).</li>
+<li><code>yarn build:watch</code> for building the library (both ESM and AOT versions) and watch for file changes.</li>
+</ul>
+<p>You may also build UMD bundle and ESM files separately:</p>
+<ul>
+<li><code>yarn build:esm</code> - for building AOT/JIT compatible versions of files.</li>
+<li><code>yarn build:esm:watch</code> - the same as previous command but in watch-mode.</li>
+<li><code>yarn build:umd</code> - for building UMD bundle only.</li>
+<li><code>yarn build:umd:watch</code> - the same as previous command but in watch-mode.</li>
 </ul>
 <h2 id="other-commands">Other commands</h2>
 <h4 id="lint-the-code">Lint the code</h4>
@@ -319,10 +326,41 @@
 <ul>
 <li><code>npm version patch</code> to increase library version. <a href="https://docs.npmjs.com/cli/version">More on bumping</a>.</li>
 </ul>
+<p><code>preversion</code> script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.</p>
 <h4 id="publish-library-to-npm">Publish library to NPM</h4>
 <ul>
 <li><code>npm publish</code> to publish your library sources on <a href="https://www.npmjs.com/">npmjs.com</a>. Once the library is published it will be <a href="https://www.npmjs.com/package/angular-library-seed">available for usage</a> in npm packages.</li>
 </ul>
+<p><code>prepublishOnly</code> script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.</p>
+<h4 id="cleaning">Cleaning</h4>
+<ul>
+<li><code>yarn clean:tmp</code> command will clean up all temporary files like <code>docs</code>, <code>dist</code>, <code>coverage</code> etc.</li>
+<li><code>yarn clean:all</code> command will clean up all temporary files along with <code>node_modules</code> folder. </li>
+</ul>
+<h1 id="library-development-workflow">Library development workflow</h1>
+<p>In order to debug your library in browser you need to have Angular project that will consume your library, build the application and display it. For your convenience all of that should happen automatically in background so once you change library source code you should instantly see the changes in browser.</p>
+<p>There are several ways to go here:</p>
+<ul>
+<li>Use your <strong>real library-consumer project</strong> and link your library to it via <code>npm link</code> command (see below).</li>
+<li>Use <a href="https://cli.angular.io/">Angular-CLI</a> to generate library-consumer project for you and use the same <code>npm link</code> command to link your library to it.</li>
+<li>Use <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo applications</a> that are provided for your convenience as a part of this repository.</li>
+</ul>
+<h3 id="using-npm-link-preferable-">Using <code>npm link</code> (preferable)</h3>
+<p>In you library root folder:</p>
+<pre><code class="hljs bash"><span class="hljs-comment"># Create npm link</span><br>npm link<br><br><span class="hljs-comment"># Build library in watch mode</span><br>yarn build:watch</code></pre><p>In you project folder that should consume the library:</p>
+<pre><code class="hljs bash"><span class="hljs-comment"># Link you library to the project</span><br>npm link angular-library-seed<br><br><span class="hljs-comment"># Build your project. In case of Angular-CLI use the following command.</span><br>ng serve</code></pre><p>Then you need to import your library into your project&#39;s source code.</p>
+<p>Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.</p>
+<p><a href="https://docs.npmjs.com/cli/link">More information</a> about <code>npm link</code> command.</p>
+<h3 id="using-demo-applications">Using demo applications</h3>
+<p>You may take advantage of watch-modes for both library build and <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo-projects</a> builds in order to see changes to your library&#39;s source code immediately in your browser.</p>
+<p>To do so you need to:</p>
+<ol>
+<li>Open two console instances.</li>
+<li>Launch library build in watch mode in first console instance by running <code>yarn build:watch</code> (assuming that you&#39;re in <code>angular-library-seed</code> root folder).</li>
+<li>Launch demo project build (JIT version) in watch-mode by running <code>yarn start</code> in second console instance (assuming that you&#39;re in <code>angular-library-seed/demo</code> folder).</li>
+</ol>
+<p>As a result once you change library source code it will be automatically re-compiled and in turn your JIT demo-project will be automatically re-built and you will be able to see that changes in your browser instantly.</p>
+<p>For more details about demo projects, their folder structure and npm commands please take a look at <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo projects README</a>.</p>
 
 
 
