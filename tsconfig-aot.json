@@ -6,12 +6,14 @@
     "sourceMap": true,
     "declaration": true,
     "removeComments": false,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "pretty": true,
+    "stripInternal": true,
+    "skipLibCheck": true,
     "outDir": "dist",
     "rootDir": "./tmp/src-inlined"
   },
@@ -22,6 +24,7 @@
     "genDir": "dist",
     "debug": false,
     "skipTemplateCodegen": true,
-    "skipMetadataEmit": false
+    "skipMetadataEmit": false,
+    "strictMetadataEmit": true
   }
 }

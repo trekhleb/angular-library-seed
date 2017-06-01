@@ -1,6 +1,7 @@
 {
   "name": "angular-library-seed-demo",
   "description": "AOT/JIT/UMD build demo of angular library seed",
+  "license": "MIT",
   "scripts": {
     "build": "npm run build:aot && npm run build:jit && npm run build:umd",
     "build:aot": "npm run build:aot:compile && npm run build:aot:bundle",
