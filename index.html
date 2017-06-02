@@ -341,16 +341,16 @@
 <p>In order to debug your library in browser you need to have Angular project that will consume your library, build the application and display it. For your convenience all of that should happen automatically in background so once you change library source code you should instantly see the changes in browser.</p>
 <p>There are several ways to go here:</p>
 <ul>
-<li>Use your <strong>real library-consumer project</strong> and link your library to it via <code>npm link</code> command (see below).</li>
-<li>Use <a href="https://cli.angular.io/">Angular-CLI</a> to generate library-consumer project for you and use the same <code>npm link</code> command to link your library to it.</li>
+<li>Use your <strong>real library-consumer project</strong> and link your library to it via <code>yarn link</code> command (see below).</li>
+<li>Use <a href="https://cli.angular.io/">Angular-CLI</a> to generate library-consumer project for you and use the same <code>yarn link</code> command to link your library to it.</li>
 <li>Use <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo applications</a> that are provided for your convenience as a part of this repository.</li>
 </ul>
-<h3 id="using-npm-link-preferable-">Using <code>npm link</code> (preferable)</h3>
+<h3 id="using-yarn-link-preferable-">Using <code>yarn link</code> (preferable)</h3>
 <p>In you library root folder:</p>
-<pre><code class="hljs bash"><span class="hljs-comment"># Create npm link</span><br>npm link<br><br><span class="hljs-comment"># Build library in watch mode</span><br>yarn build:watch</code></pre><p>In you project folder that should consume the library:</p>
-<pre><code class="hljs bash"><span class="hljs-comment"># Link you library to the project</span><br>npm link angular-library-seed<br><br><span class="hljs-comment"># Build your project. In case of Angular-CLI use the following command.</span><br>ng serve</code></pre><p>Then you need to import your library into your project&#39;s source code.</p>
+<pre><code class="hljs bash"><span class="hljs-comment"># Create symbolic link</span><br>yarn link<br><br><span class="hljs-comment"># Build library in watch mode</span><br>yarn build:watch</code></pre><p>In you project folder that should consume the library:</p>
+<pre><code class="hljs bash"><span class="hljs-comment"># Link you library to the project</span><br>yarn link <span class="hljs-string">"angular-library-seed"</span><br><br><span class="hljs-comment"># Build your project. In case of Angular-CLI use the following command.</span><br>ng serve</code></pre><p>Then you need to import your library into your project&#39;s source code.</p>
 <p>Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.</p>
-<p><a href="https://docs.npmjs.com/cli/link">More information</a> about <code>npm link</code> command.</p>
+<p><a href="https://yarnpkg.com/en/docs/cli/link">More information</a> about <code>yarn link</code> command.</p>
 <h3 id="using-demo-applications">Using demo applications</h3>
 <p>You may take advantage of watch-modes for both library build and <a href="https://github.com/trekhleb/angular-library-seed/tree/master/demo">demo-projects</a> builds in order to see changes to your library&#39;s source code immediately in your browser.</p>
 <p>To do so you need to:</p>
