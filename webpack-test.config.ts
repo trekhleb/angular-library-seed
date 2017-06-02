@@ -27,8 +27,8 @@ export default {
       },
 
       {
-        test: /src\/.+\.ts$/,
-        exclude: /(node_modules|\.spec\.ts$)/,
+        test: /.ts$/,
+        exclude: /(node_modules|\.spec\.ts|\.e2e\.ts$)/,
         loader: 'istanbul-instrumenter-loader',
         enforce: 'post'
       },
