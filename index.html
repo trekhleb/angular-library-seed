@@ -410,6 +410,9 @@ yarn link &quot;angular-library-seed&quot;
 ng serve</code></pre><p>Then you need to import your library into your project&#39;s source code.</p>
 <p>Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.</p>
 <p><a href="https://yarnpkg.com/en/docs/cli/link">More information</a> about <code>yarn link</code> command.</p>
+<blockquote>
+<p>At the moment of publishing this project there is a <a href="https://github.com/angular/angular-cli/issues/3854">bug</a> exists when using <code>yarn link</code> in combination with Angular CLI. The issue is caused by having <code>node_modules</code> folder inside linked library along with <code>node_modules</code> folder of Angular CLI project. There is also a <a href="https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771">fix</a> has been suggested - just add a <code>paths</code> property with all angular dependencies to the tsconfig file of the Angular CLI project, where you include your library with <code>yarn link</code>.</p>
+</blockquote>
 
 
 
