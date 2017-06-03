@@ -13,7 +13,8 @@ This project contains TickTock library example. The library itself is small and 
 - You want your library to be ready for further **AOT** or **JIT** compilation.
 - You want your library to be ready for further usage **directly in browsers** (let's say [UMD](https://github.com/umdjs/umd) bundle loaded by [SystemJS](https://github.com/systemjs/systemjs)).
 - You want to write component styles in **external SCSS files**.
-- Your want to write component templates in **external HTML files**.
+- You want to write component templates in **external HTML files**.
+- You want to have **watch-mode** for library builds (including AOT build).
 
 # Main Features
 - **AOT/JIT** compatible library build via [Angular Compiler](https://www.npmjs.com/package/@angular/compiler-cli) (ngc).
