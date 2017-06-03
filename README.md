@@ -198,3 +198,5 @@ Then you need to import your library into your project's source code.
 Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.
 
 [More information](https://yarnpkg.com/en/docs/cli/link) about `yarn link` command.
+
+> At the moment of publishing this project there is a [bug](https://github.com/angular/angular-cli/issues/3854) exists when using `yarn link` in combination with Angular CLI. The issue is caused by having `node_modules` folder inside linked library along with `node_modules` folder of Angular CLI project. There is also a [fix](https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771) has been suggested - just add a `paths` property with all angular dependencies to the tsconfig file of the Angular CLI project, where you include your library with `yarn link`.
