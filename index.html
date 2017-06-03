@@ -65,6 +65,9 @@
                                 <li class="link">
                                     <a href="./modules/TickTockModule.html" >TickTockModule</a>
                                 </li>
+                                <li class="link">
+                                    <a href="./modules/TickTockModule.html" >TickTockModule</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -79,6 +82,9 @@
                         <ul class="links collapse in"
                                 id="xs-components-links"
                             >
+                                <li class="link">
+                                    <a href="./components/TickTockComponent.html" >TickTockComponent</a>
+                                </li>
                                 <li class="link">
                                     <a href="./components/TickTockComponent.html" >TickTockComponent</a>
                                 </li>
@@ -98,6 +104,9 @@
                         <ul class="links collapse in"
                                 id="xs-injectables-links"
                             >
+                                <li class="link">
+                                    <a href="./injectables/TickTockService.html" >TickTockService</a>
+                                </li>
                                 <li class="link">
                                     <a href="./injectables/TickTockService.html" >TickTockService</a>
                                 </li>
@@ -174,6 +183,9 @@
                                        <li class="link">
                                            <a href="./modules/TickTockModule.html" >TickTockModule</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="./modules/TickTockModule.html" >TickTockModule</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -188,6 +200,9 @@
                                <ul class="links collapse in"
                                        id="components-links"
                    >
+                                       <li class="link">
+                                           <a href="./components/TickTockComponent.html" >TickTockComponent</a>
+                                       </li>
                                        <li class="link">
                                            <a href="./components/TickTockComponent.html" >TickTockComponent</a>
                                        </li>
@@ -207,6 +222,9 @@
                                <ul class="links collapse in"
                                        id="injectables-links"
                    >
+                                       <li class="link">
+                                           <a href="./injectables/TickTockService.html" >TickTockService</a>
+                                       </li>
                                        <li class="link">
                                            <a href="./injectables/TickTockService.html" >TickTockService</a>
                                        </li>
@@ -411,7 +429,7 @@ ng serve</code></pre><p>Then you need to import your library into your project&#
 <p>Now, once you update your library source code it will automatically be re-compiled and your project will be re-built so you may see library changes instantly.</p>
 <p><a href="https://yarnpkg.com/en/docs/cli/link">More information</a> about <code>yarn link</code> command.</p>
 <blockquote>
-<p>At the moment of publishing this project there is a <a href="https://github.com/angular/angular-cli/issues/3854">bug</a> exists when using <code>yarn link</code> in combination with Angular CLI. The issue is caused by having <code>node_modules</code> folder inside linked library along with <code>node_modules</code> folder of Angular CLI project. There is also a <a href="https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771">fix</a> has been suggested - just add a <code>paths</code> property with all angular dependencies to the tsconfig file of the Angular CLI project, where you include your library with <code>yarn link</code>.</p>
+<p>At the moment of publishing this project there is a <a href="https://github.com/angular/angular-cli/issues/3854">bug</a> exists when using <code>yarn link</code> in combination with Angular CLI. The issue is caused by having <code>node_modules</code> folder inside linked library. There is a <a href="https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771">workaround</a> has been provided that suggests to add a <code>paths</code> property with all Angular dependencies to the <code>tsconfig.json</code> file of the Angular CLI project like so: <code>&quot;paths&quot;: { &quot;@angular/*&quot;: [&quot;../node_modules/@angular/*&quot;] }</code></p>
 </blockquote>
 
 
