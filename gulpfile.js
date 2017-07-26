@@ -56,7 +56,7 @@ gulp.task('build:esm:watch', ['build:esm'], () => {
  */
 function compileSass(path, ext, file, callback) {
   let compiledCss = sass.renderSync({
-    data: file,
+    data: file || '// nothing',
     outputStyle: 'compressed',
   });
   callback(null, compiledCss.css);
