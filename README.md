@@ -193,7 +193,7 @@ In you project folder that should consume the library:
 yarn link "angular-library-seed"
 
 # Build your project. In case of Angular-CLI use the following command.
-ng serve
+ng serve --aot
 ```
 
 Then you need to import your library into your project's source code.
