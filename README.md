@@ -202,4 +202,11 @@ Now, once you update your library source code it will automatically be re-compil
 
 [More information](https://yarnpkg.com/en/docs/cli/link) about `yarn link` command.
 
-> At the moment of publishing this project there is a [bug](https://github.com/angular/angular-cli/issues/3854) exists when using `yarn link` in combination with Angular CLI. The issue is caused by having `node_modules` folder inside linked library. There is a [workaround](https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771) has been provided that suggests to add a `paths` property with all Angular dependencies to the `tsconfig.json` file of the Angular CLI project like so: `"paths": { "@angular/*": ["../node_modules/@angular/*"] }`
+> At the moment of publishing this project there is a [bug](https://github.com/angular/angular-cli/issues/3854) exists when using `yarn link` in combination with Angular CLI. The issue is caused by having `node_modules` folder inside linked library. There is a [workaround](https://github.com/angular/angular-cli/issues/3854#issuecomment-274344771) has been provided that suggests to add a `paths` property with all Angular dependencies to the `tsconfig.json` file of the Angular CLI project like it is shown below:
+```
+{
+  "compilerOptions": {
+    "paths": { "@angular/*": ["../node_modules/@angular/*"] }
+  }
+}
+```
