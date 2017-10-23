@@ -1,5 +1,5 @@
 {
-  "name": "angular-library-seed-demo",
+  "name": "angular-atomic-library-demo",
   "description": "AOT/JIT/UMD build demo of angular library seed",
   "license": "MIT",
   "scripts": {

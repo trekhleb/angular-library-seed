@@ -1,6 +1,6 @@
 {
-  "name": "angular-library-seed",
-  "version": "0.0.20",
+  "name": "angular-atomic-library",
+  "version": "0.0.1",
   "description": "Angular library seed",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
@@ -19,18 +19,15 @@
     "tick-tock",
     "typescript"
   ],
-  "author": {
-    "name": "Oleksii Trekhleb",
-    "url": "https://www.linkedin.com/in/trekhleb/"
-  },
+  "author": "Oleksii tsukhu (https://www.linkedin.com/in/tsukhu/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trekhleb/angular-library-seed.git"
+    "url": "git+https://github.com/tsukhu/angular-atomic-library.git"
   },
   "bugs": {
-    "url": "https://github.com/trekhleb/angular-library-seed/issues"
+    "url": "https://github.com/tsukhu/angular-atomic-library/issues"
   },
-  "homepage": "https://github.com/trekhleb/angular-library-seed#readme",
+  "homepage": "https://github.com/tsukhu/angular-atomic-library#readme",
   "scripts": {
     "build": "npm run build:esm && npm run build:umd",
     "build:esm": "gulp inline-templates && npm run ngcompile",
@@ -46,7 +43,7 @@
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs",
     "lint": "npm run tslint 'src/**/*.ts'",
-    "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
+    "ngcompile": "ngc -p tsconfig-aot.json",
     "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp",

@@ -1,14 +1,14 @@
-# `angular-library-seed` - the starter for Angular libraries
+# `angular-atomic-library` - the starter for Angular libraries
 
-[![Build Status](https://travis-ci.org/trekhleb/angular-library-seed.svg?branch=master)](https://travis-ci.org/trekhleb/angular-library-seed)
-[![codecov](https://codecov.io/gh/trekhleb/angular-library-seed/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/angular-library-seed)
-[![npm version](https://badge.fury.io/js/angular-library-seed.svg)](https://badge.fury.io/js/angular-library-seed)
+[![Build Status](https://travis-ci.org/tsukhu/angular-atomic-library.svg?branch=master)](https://travis-ci.org/tsukhu/angular-atomic-library)
+[![codecov](https://codecov.io/gh/tsukhu/angular-atomic-library/branch/master/graph/badge.svg)](https://codecov.io/gh/tsukhu/angular-atomic-library)
+[![npm version](https://badge.fury.io/js/angular-atomic-library.svg)](https://badge.fury.io/js/angular-atomic-library)
 
 > Seed project for [Angular](https://angular.io/) libraries that are [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)/[JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) compatible and that use external [SCSS](http://sass-lang.com/)-styles and HTML-templates.
 
 This project contains TickTock library example. The library itself is small and the only thing it does is [displaying current time](http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/) (Plunker example). But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them.
 
-> [Read more](https://medium.com/@trekhleb/how-to-create-aot-jit-compatible-angular-4-library-with-external-scss-html-templates-9da6e68dac6e) about architectural **challenges** and **solutions** used in this repository.
+> [Read more](https://medium.com/@tsukhu/how-to-create-aot-jit-compatible-angular-4-library-with-external-scss-html-templates-9da6e68dac6e) about architectural **challenges** and **solutions** used in this repository.
 
 # You might find this project helpful if
 - You want to create library for **Angular 4**.
@@ -26,7 +26,7 @@ This project contains TickTock library example. The library itself is small and 
 - **Watch modes** for building and testing procedures that makes developing process easier.
 - **Linting** with [TSLint](https://palantir.github.io/tslint/) and [Codelyzer](https://github.com/mgechev/codelyzer) for static code analysis.
 - **Exploring your build** via [Sourcemap Explorer](https://www.npmjs.com/package/source-map-explorer) that shows you a treemap visualization to help you debug where all the code is coming from. 
-- **Documentation generation** via [Compodoc](https://github.com/compodoc/compodoc). Take a look at [documentation example](https://trekhleb.github.io/angular-library-seed/).
+- **Documentation generation** via [Compodoc](https://github.com/compodoc/compodoc). Take a look at [documentation example](https://tsukhu.github.io/angular-atomic-library/).
 - **Documentation hosting**  via [GitHub Pages](https://pages.github.com/).
 - **AOT/JIT/UMD demos** via [Webpack](https://webpack.js.org/) and [SystemJS](https://github.com/systemjs/systemjs) that allows you to test library builds.
 - **Continuous integration** with [Travis CI](https://travis-ci.org/).
@@ -36,10 +36,10 @@ This project contains TickTock library example. The library itself is small and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/trekhleb/angular-library-seed.git
+git clone https://github.com/tsukhu/angular-atomic-library.git
 
 # Go to repository folder
-cd angular-library-seed
+cd angular-atomic-library
 
 # Install all dependencies
 yarn install
@@ -51,7 +51,7 @@ yarn build
 # File Structure
 
 ```
-angular-library-seed
+angular-atomic-library
   ├─ demo                         * Folder for demo applications (MAY BE DELETED if not required) 
   |  ├─ esm                       * AOT/JIT demo project
   |  ├─ umd                       * UMD demo project
@@ -133,7 +133,7 @@ You may also build UMD bundle and ESM files separately:
 
 #### Generate documentation
 - `yarn docs` for generating documentation locally.
-- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages. [Documentation example](https://trekhleb.github.io/angular-library-seed/).
+- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages. [Documentation example](https://tsukhu.github.io/angular-atomic-library/).
 
 #### Explore the bundle
 - `yarn explorer` to find out where all your code in bundle is coming from.
@@ -144,7 +144,7 @@ You may also build UMD bundle and ESM files separately:
 `preversion` script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.
 
 #### Publish library to NPM
-- `npm publish` to publish your library sources on [npmjs.com](https://www.npmjs.com/). Once the library is published it will be [available for usage](https://www.npmjs.com/package/angular-library-seed) in npm packages.
+- `npm publish` to publish your library sources on [npmjs.com](https://www.npmjs.com/). Once the library is published it will be [available for usage](https://www.npmjs.com/package/angular-atomic-library) in npm packages.
 
 `prepublishOnly` script in this case will automatically run project testing and linting in prior in order to check that the library is ready for publishing.
 
@@ -158,21 +158,21 @@ In order to debug your library in browser you need to have Angular project that 
 
 There are several ways to go here:
 - Use your **real library-consumer project** and link your library to it via `yarn link` command (see below).
-- Use [demo applications](https://github.com/trekhleb/angular-library-seed/tree/master/demo) that are provided for your convenience as a part of this repository.
+- Use [demo applications](https://github.com/tsukhu/angular-atomic-library/tree/master/demo) that are provided for your convenience as a part of this repository.
 - Use [Angular-CLI](https://cli.angular.io/) to generate library-consumer project for you and then use `yarn link` to link your library to it.
 
 ### Using demo applications
 
-You may take advantage of watch-modes for both library build and [demo-projects](https://github.com/trekhleb/angular-library-seed/tree/master/demo) builds in order to see changes to your library's source code immediately in your browser.
+You may take advantage of watch-modes for both library build and [demo-projects](https://github.com/tsukhu/angular-atomic-library/tree/master/demo) builds in order to see changes to your library's source code immediately in your browser.
 
 To do so you need to:
 1. Open two console instances.
-2. Launch library build in watch mode in first console instance by running `yarn build:watch` (assuming that you're in `angular-library-seed` root folder).
-3. Launch demo project build (JIT version) in watch-mode by running `yarn start` in second console instance (assuming that you're in `angular-library-seed/demo` folder).
+2. Launch library build in watch mode in first console instance by running `yarn build:watch` (assuming that you're in `angular-atomic-library` root folder).
+3. Launch demo project build (JIT version) in watch-mode by running `yarn start` in second console instance (assuming that you're in `angular-atomic-library/demo` folder).
 
 As a result once you change library source code it will be automatically re-compiled and in turn your JIT demo-project will be automatically re-built and you will be able to see that changes in your browser instantly.
 
-For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/trekhleb/angular-library-seed/tree/master/demo).
+For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/tsukhu/angular-atomic-library/tree/master/demo).
 
 ### Using `yarn link`
 
@@ -190,7 +190,7 @@ In you project folder that should consume the library:
 
 ```bash
 # Link you library to the project
-yarn link "angular-library-seed"
+yarn link "angular-atomic-library"
 
 # Build your project. In case of Angular-CLI use the following command.
 ng serve --aot
