@@ -1,0 +1,97 @@
+/* --- Plans ---------------------------- */
+
+.my_planHeader {
+    text-align: center;
+    color: black;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+}
+.my-planTitle {
+    font-size:2em;
+    font-weight: bold;
+}
+.my-planPrice {
+    font-size:1.4em;
+    font-weight: bold;    
+}
+.my-planDuration {
+    margin-top: -0.6em;
+}
+
+@media (max-width: 768px) {
+    .my-planTitle {
+        font-size:small;
+    }    
+}
+
+/* --- Features ------------------------- */
+
+.my-feature {
+    line-height:2.8em;   
+}
+
+@media (max-width: 768px) {
+    .my-feature {
+        text-align: center
+    }
+ }
+
+.my-featureRow {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border: 0.1em solid rgb(163, 163, 163);
+}    
+
+/* --- Plan 1 --------------------------- */
+.my-plan1 {
+    background: rgb(224,234,242);
+}
+
+.my_planHeader.my-plan1 a {
+    background: rgb(58, 90, 115);
+    color:white;
+}
+
+.my_planHeader.my-plan1 {
+    background: rgb(105, 153, 193);
+    border-bottom: thick solid rgb(58, 90, 115);
+}
+
+/* --- Plan 2 --------------------------- */
+.my-plan2 {
+    background: rgb(230,235,218);
+}
+
+.my_planHeader.my-plan2 a {
+    background: rgb(48, 100, 43);
+    color:white;
+}
+
+.my_planHeader.my-plan2 {
+    background: rgb(134, 162, 77);
+    border-bottom: thick solid rgb(48, 100, 43);
+}
+
+/* --- Plan 3 --------------------------- */
+.my-plan3 {
+    background: rgb(254,235,212);
+}
+
+.my_planHeader.my-plan3 a {
+    background: rgb(133, 64, 0);
+    color:white;
+}
+
+.my_planHeader.my-plan3 {
+    background: rgb(253, 161, 49);
+    border-bottom: thick solid rgb(133, 64, 0);
+}
+
+.my-planFeature {
+    text-align: center;
+    font-size: 2em;
+}
+
+.my-planFeature i.my-check {
+    color: green;
+}

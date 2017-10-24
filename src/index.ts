@@ -2,7 +2,10 @@ export { TickTockService } from './services';
 export {
     TickTockComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    PlanDetailsComponent,
+    PlanOptionsComponent
 } from './components';
-export { NavLinks , ShoppingCart , LineItem } from './models';
-export { TickTockModule, LayoutModule } from './modules';
+export { NavLinks , ShoppingCart , LineItem , Feature , FeatureAvailability, FeatureMap } from './models';
+export { TickTockModule, LayoutModule, PlansModule } from './modules';

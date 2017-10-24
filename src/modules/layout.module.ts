@@ -1,4 +1,4 @@
-import { NavBarComponent, FooterComponent } from '../components';
+import { NavBarComponent, FooterComponent, AboutComponent } from '../components';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -15,11 +15,13 @@ import { RouterModule } from '@angular/router';
   ],
   declarations: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   exports: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ]
 })
 export class LayoutModule {
