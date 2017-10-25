@@ -31,5 +31,5 @@ export {
     PlansModule,
     OrderDetailsModule,
     CartModule,
-    RegisterModule
+    RegisterFormModule
 } from './modules';

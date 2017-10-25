@@ -20,5 +20,5 @@ console.log('`Register User` bundle loaded asynchronously');
         ReactiveFormsModule
     ]
 })
-export class RegisterModule {
+export class RegisterFormModule {
 }
