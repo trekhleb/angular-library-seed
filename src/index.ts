@@ -28,7 +28,6 @@ export {
 export {
     TickTockModule,
     LayoutModule,
-    PlansModule,
     OrderDetailsModule,
     CartModule,
     RegisterFormModule

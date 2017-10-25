@@ -1,6 +1,6 @@
 {
   "name": "angular-atomic-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular library seed",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
@@ -19,7 +19,7 @@
     "tick-tock",
     "typescript"
   ],
-  "author": "Oleksii tsukhu (https://www.linkedin.com/in/tsukhu/)",
+  "author": "tsukhu (https://www.linkedin.com/in/tsukhu/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tsukhu/angular-atomic-library.git"
