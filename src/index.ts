@@ -6,7 +6,10 @@ export {
     AboutComponent,
     PlanDetailsComponent,
     PlanOptionsComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    CartComponent,
+    CartTotalComponent,
+    NoContentComponent
 } from './components';
 export {
     NavLinks,
@@ -24,5 +27,6 @@ export {
     TickTockModule,
     LayoutModule,
     PlansModule,
-    OrderDetailsModule
+    OrderDetailsModule,
+    CartModule
 } from './modules';
