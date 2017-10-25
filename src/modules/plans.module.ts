@@ -1,5 +1,4 @@
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { PlanDetailsComponent, PlanOptionsComponent } from '../components/plans';
 
@@ -14,8 +13,7 @@ import { PlanDetailsComponent, PlanOptionsComponent } from '../components/plans'
     PlanDetailsComponent
   ],
   imports: [
-    CommonModule,
-    FormsModule
+    CommonModule
   ]
 })
 export class PlansModule {

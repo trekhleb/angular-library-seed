@@ -4,15 +4,12 @@ import {
   AboutComponent,
   NoContentComponent
 } from '../components';
-import { NgModule, ApplicationRef } from '@angular/core';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
-    FormsModule,
-    CommonModule,
-    ReactiveFormsModule
+    CommonModule
   ],
   providers: [
   ],

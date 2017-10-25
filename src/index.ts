@@ -23,7 +23,7 @@ export {
     Order,
     Plan
 } from './models';
-/*
+
 export {
     TickTockModule,
     LayoutModule,
@@ -31,4 +31,3 @@ export {
     OrderDetailsModule,
     CartModule
 } from './modules';
-*/
