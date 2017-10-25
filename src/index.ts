@@ -9,7 +9,8 @@ export {
     OrderDetailsComponent,
     CartComponent,
     CartTotalComponent,
-    NoContentComponent
+    NoContentComponent,
+    RegisterFormComponent
 } from './components';
 export {
     NavLinks,
@@ -29,5 +30,6 @@ export {
     LayoutModule,
     PlansModule,
     OrderDetailsModule,
-    CartModule
+    CartModule,
+    RegisterModule
 } from './modules';
