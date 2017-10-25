@@ -5,7 +5,24 @@ export {
     FooterComponent,
     AboutComponent,
     PlanDetailsComponent,
-    PlanOptionsComponent
+    PlanOptionsComponent,
+    OrderDetailsComponent
 } from './components';
-export { NavLinks , ShoppingCart , LineItem , Feature , FeatureAvailability, FeatureMap } from './models';
-export { TickTockModule, LayoutModule, PlansModule } from './modules';
+export {
+    NavLinks,
+    ShoppingCart,
+    LineItem,
+    Feature,
+    FeatureAvailability,
+    FeatureMap,
+    User,
+    Address,
+    Order,
+    Plan
+} from './models';
+export {
+    TickTockModule,
+    LayoutModule,
+    PlansModule,
+    OrderDetailsModule
+} from './modules';

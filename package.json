@@ -53,7 +53,9 @@
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "peerDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/core": "^4.0.0"
@@ -68,6 +70,7 @@
     "@compodoc/compodoc": "^1.0.0-beta.9",
     "@types/jasmine": "^2.5.47",
     "@types/karma": "^1.7.0",
+    "@types/lodash": "^4.14.79",
     "@types/node": "^8.0.0",
     "@types/webpack": "^3.0.13",
     "@types/webpack-env": "^1.13.0",
