@@ -7,14 +7,12 @@ import {
 import { NgModule, ApplicationRef } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     FormsModule,
     CommonModule,
-    ReactiveFormsModule,
-    RouterModule
+    ReactiveFormsModule
   ],
   providers: [
   ],
