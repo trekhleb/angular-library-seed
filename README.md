@@ -1,4 +1,4 @@
-# `angular-atomic-library` - the starter for Angular libraries
+# `angular-atomic-library` - the starter for Angular libraries.
 
 [![Build Status](https://travis-ci.org/tsukhu/angular-atomic-library.svg?branch=master)](https://travis-ci.org/tsukhu/angular-atomic-library)
 [![codecov](https://codecov.io/gh/tsukhu/angular-atomic-library/branch/master/graph/badge.svg)](https://codecov.io/gh/tsukhu/angular-atomic-library)
@@ -6,9 +6,8 @@
 
 > Seed project for [Angular](https://angular.io/) libraries that are [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)/[JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) compatible and that use external [SCSS](http://sass-lang.com/)-styles and HTML-templates.
 
-This project contains TickTock library example. The library itself is small and the only thing it does is [displaying current time](http://embed.plnkr.co/VbO1hldrCfF6ITG6VvGG/) (Plunker example). But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them.
+This project is contains an example of how to build a web component library . But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them. The complete demo application based on the atomic web design principles has been created and is available at https://github.com/tsukhu/angular-atomic-app 
 
-> [Read more](https://medium.com/@tsukhu/how-to-create-aot-jit-compatible-angular-4-library-with-external-scss-html-templates-9da6e68dac6e) about architectural **challenges** and **solutions** used in this repository.
 
 # You might find this project helpful if
 - You want to create library for **Angular 4**.
@@ -61,7 +60,7 @@ angular-atomic-library
   |  ├─ components                * Example of library components with tests
   |  ├─ services                  * Example of library services with tests
   |  ├─ index.ts                  * Library entry point that is used by builders
-  |  └─ tick-tock.module.ts       * Example of library module
+  |  └─ modules                   * Example of library modules
   |
   ├─ .editorconfig                * Common IDE configuration
   ├─ .gitignore	                  * List of files that are ignored while publishing to git repo
