@@ -1,7 +1,5 @@
 # `angular-atomic-library` - the starter for Angular libraries.
 
-[![Build Status](https://travis-ci.org/tsukhu/angular-atomic-library.svg?branch=master)](https://travis-ci.org/tsukhu/angular-atomic-library)
-[![codecov](https://codecov.io/gh/tsukhu/angular-atomic-library/branch/master/graph/badge.svg)](https://codecov.io/gh/tsukhu/angular-atomic-library)
 [![npm version](https://badge.fury.io/js/angular-atomic-library.svg)](https://badge.fury.io/js/angular-atomic-library)
 
 > Seed project for [Angular](https://angular.io/) libraries that are [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)/[JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) compatible and that use external [SCSS](http://sass-lang.com/)-styles and HTML-templates.
