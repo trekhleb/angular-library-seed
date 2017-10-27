@@ -1,7 +1,7 @@
 {
   "name": "angular-atomic-library",
   "version": "0.0.2",
-  "description": "Angular library seed",
+  "description": "Angular Atomic Web Design Sample Library",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -22,12 +22,12 @@
   "author": "tsukhu (https://www.linkedin.com/in/tsukhu/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsukhu/angular-atomic-library.git"
+    "url": "git+https://github.com/ERS-HCL/angular-atomic-library.git"
   },
   "bugs": {
-    "url": "https://github.com/tsukhu/angular-atomic-library/issues"
+    "url": "https://github.com/ERS-HCL/angular-atomic-library/issues"
   },
-  "homepage": "https://github.com/tsukhu/angular-atomic-library#readme",
+  "homepage": "https://github.com/ERS-HCL/angular-atomic-library#readme",
   "scripts": {
     "build": "npm run build:esm && npm run build:umd",
     "build:esm": "gulp inline-templates && npm run ngcompile",
