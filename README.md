@@ -6,7 +6,7 @@
 
 > Seed project for [Angular](https://angular.io/) libraries that are [AOT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html)/[JIT](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) compatible and that use external [SCSS](http://sass-lang.com/)-styles and HTML-templates.
 
-This project is contains an example of how to build a web component library . But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them. The complete demo application based on the atomic web design principles has been created and is available at https://github.com/tsukhu/angular-atomic-app 
+This project is contains an example of how to build a web component library . But what **most important** is that the project contains **reusable environment** for the libraries that allows to build, test, lint, document, explore and publish them. The complete demo application based on the atomic web design principles has been created and is available at https://github.com/ERS-HCL/angular-atomic-app 
 
 
 # You might find this project helpful if
