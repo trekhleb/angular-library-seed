@@ -130,7 +130,7 @@ You may also build UMD bundle and ESM files separately:
 
 #### Generate documentation
 - `yarn docs` for generating documentation locally.
-- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages. [Documentation example](https://tsukhu.github.io/angular-atomic-library/).
+- `yarn gh-pages` for generating documentation and uploading it to GitHub Pages. [Documentation example](https://ers-hcl.github.io/angular-atomic-library/).
 
 #### Explore the bundle
 - `yarn explorer` to find out where all your code in bundle is coming from.
