@@ -1,13 +1,15 @@
 import {
   Component,
   OnInit,
-  Input
+  Input,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 @Component({
   selector: 'about',
   styleUrls: ['./about.component.scss'],
-  templateUrl: './about.component.html'
+  templateUrl: './about.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutComponent {
 

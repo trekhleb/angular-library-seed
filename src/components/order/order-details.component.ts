@@ -1,6 +1,7 @@
 import {
     Component,
-    Input
+    Input,
+    ChangeDetectionStrategy
 } from '@angular/core';
 import {
     ShoppingCart,
@@ -16,7 +17,8 @@ import * as _ from 'lodash';
 @Component({
     selector: 'order-details',
     styleUrls: ['./order-details.component.scss'],
-    templateUrl: './order-details.component.html'
+    templateUrl: './order-details.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OrderDetailsComponent {
 

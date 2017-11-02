@@ -4,7 +4,8 @@ import {
     OnChanges,
     Input,
     Output,
-    EventEmitter
+    EventEmitter,
+    ChangeDetectionStrategy
 } from '@angular/core';
 import { LineItem } from '../../models/shopping-cart.model';
 import * as _ from 'lodash';
@@ -17,7 +18,8 @@ import * as _ from 'lodash';
     // We need to tell Angular's Dependency Injection which providers are in our app.
     styleUrls: ['./cart-total.component.scss'],
     // Every Angular template is first compiled by the browser before Angular runs it's compiler
-    templateUrl: './cart-total.component.html'
+    templateUrl: './cart-total.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CartTotalComponent implements OnChanges {
     @Input() public items: LineItem[];
