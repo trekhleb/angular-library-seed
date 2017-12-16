@@ -20,5 +20,6 @@ Desktop.ini
 
 # Temporary files
 coverage/
+dist
 docs
 tmp
