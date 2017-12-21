@@ -16,7 +16,7 @@
                 <div class="panel-body">
                     <div class="the-price">
                         <h1>
-                            {{plan.pricing | currency:'USD':true}}<span class="subscript">{{plan.billing === 'monthly' ? '/mo':'annual'}}</span></h1>
+                            {{plan.pricing | currency:'USD':'symbol-narrow'}}<span class="subscript">{{plan.billing === 'monthly' ? '/mo':'annual'}}</span></h1>
                         <small>{{plan.offer}}</small>
                     </div>
                     <table class="table table-striped" >

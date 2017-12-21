@@ -25,6 +25,7 @@
     "debug": false,
     "skipTemplateCodegen": true,
     "skipMetadataEmit": false,
-    "strictMetadataEmit": true
+    "strictMetadataEmit": true,
+    "preserveWhitespaces": false
   }
 }

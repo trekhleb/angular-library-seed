@@ -8,7 +8,7 @@ This project is contains an example of how to build a web component library . Bu
 
 
 # You might find this project helpful if
-- You want to create library for **Angular 4**.
+- You want to create library for **Angular 5**.
 - You want your library to be ready for further **AOT** or **JIT** compilation.
 - You want your library to be ready for further usage **directly in browsers** (let's say [UMD](https://github.com/umdjs/umd) bundle loaded by [SystemJS](https://github.com/systemjs/systemjs)).
 - You want to write component styles in **external SCSS files**.
@@ -33,7 +33,7 @@ This project is contains an example of how to build a web component library . Bu
 
 ```bash
 # Clone the repository
-git clone https://github.com/tsukhu/angular-atomic-library.git
+git clone https://github.com/ERS-HCL/angular-atomic-library.git
 
 # Go to repository folder
 cd angular-atomic-library
@@ -155,12 +155,12 @@ In order to debug your library in browser you need to have Angular project that 
 
 There are several ways to go here:
 - Use your **real library-consumer project** and link your library to it via `yarn link` command (see below).
-- Use [demo applications](https://github.com/tsukhu/angular-atomic-library/tree/master/demo) that are provided for your convenience as a part of this repository.
+- Use [demo applications](https://github.com/ERS-HCL/angular-atomic-library/tree/master/demo) that are provided for your convenience as a part of this repository.
 - Use [Angular-CLI](https://cli.angular.io/) to generate library-consumer project for you and then use `yarn link` to link your library to it.
 
 ### Using demo applications
 
-You may take advantage of watch-modes for both library build and [demo-projects](https://github.com/tsukhu/angular-atomic-library/tree/master/demo) builds in order to see changes to your library's source code immediately in your browser.
+You may take advantage of watch-modes for both library build and [demo-projects](https://github.com/ERS-HCL/angular-atomic-library/tree/master/demo) builds in order to see changes to your library's source code immediately in your browser.
 
 To do so you need to:
 1. Open two console instances.
@@ -169,7 +169,7 @@ To do so you need to:
 
 As a result once you change library source code it will be automatically re-compiled and in turn your JIT demo-project will be automatically re-built and you will be able to see that changes in your browser instantly.
 
-For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/tsukhu/angular-atomic-library/tree/master/demo).
+For more details about demo projects, their folder structure and npm commands please take a look at [demo projects README](https://github.com/ERS-HCL/angular-atomic-library/tree/master/demo).
 
 ### Using `yarn link`
 

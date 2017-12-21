@@ -59,15 +59,15 @@
     							<!-- foreach ($order->lineItems as $line) or some such thing here -->
     							<tr *ngFor="let lineItem of shoppingCart?.lineItems">
     								<td>{{lineItem.productName}}</td>
-    								<td class="text-center">{{lineItem.unitPrice | currency:'USD':true}}</td>
+    								<td class="text-center">{{lineItem.unitPrice | currency:'USD':'symbol-narrow'}}</td>
     								<td class="text-center">1</td>
-    								<td class="text-right">{{lineItem.unitPrice | currency:'USD':true}}</td>
+    								<td class="text-right">{{lineItem.unitPrice | currency:'USD':'symbol-narrow'}}</td>
     							</tr>
     							<tr>
     								<td class="thick-line"></td>
     								<td class="thick-line"></td>
     								<td class="thick-line text-center"><strong>Total</strong></td>
-    								<td class="thick-line text-right">{{ total | currency:'USD':true}}</td>
+    								<td class="thick-line text-right">{{ total | currency:'USD':'symbol-narrow'}}</td>
     							</tr>
     						</tbody>
     					</table>
