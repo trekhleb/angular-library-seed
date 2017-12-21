@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-offset-4 col-sm-8">
+        <div class="row">
+            <div class="col-xs-4 my_planHeader" [class.my-plan1]="i==0" [class.my-plan2]="i==1" [class.my-plan3]="i==2" *ngFor="let plan of plans;let i=index">
+                <div class="my-planTitle">{{plan.name}}</div>
+                <div class="my-planPrice">{{plan.pricing | currency:'USD':'symbol-narrow'}}</div>
+                <div class="my-planDuration">{{plan.billing === 'monthly' ? 'per month':'annual'}}</div>
+                <a type="button" class="btn btn-default" (click)="selectedPlan(plan)">Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row my-featureRow" *ngFor="let feature of features">
+    <div class="col-xs-12 col-sm-4 my-feature">
+        {{feature.description}}
+    </div>
+    <div class="col-xs-12 col-sm-8">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 my-planFeature" [class.my-plan1]="j==0" [class.my-plan2]="j==1" [class.my-plan3]="j==2" *ngFor="let item of feature?.availability;let j=index">
+                <i class="fa" [class.fa-check]="item.availability==1" [class.my-check]="item.availability==1"></i>
+            </div>
+        </div>
+    </div>
+</div>

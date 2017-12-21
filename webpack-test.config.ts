@@ -3,7 +3,7 @@ import * as path from 'path';
 
 export default {
   resolve: {
-    extensions: [ '.ts', '.js', '.json' ]
+    extensions: ['.ts', '.js', '.json']
   },
   module: {
     rules: [
@@ -20,10 +20,7 @@ export default {
             loader: 'angular2-template-loader'
           }
         ],
-        exclude: [
-          /\.e2e\.ts$/,
-          /node_modules/
-        ]
+        exclude: [/\.e2e\.ts$/, /node_modules/]
       },
 
       {
@@ -60,9 +57,24 @@ export default {
       test: /\.(ts|js)($|\?)/i
     }),
 
+    /**
+     * Plugin: ContextReplacementPlugin
+     * Description: Provides context to Angular's use of System.import
+     *
+     * See: https://webpack.github.io/docs/list-of-plugins.html#contextreplacementplugin
+     * See: https://github.com/angular/angular/issues/11580
+     */
     new webpack.ContextReplacementPlugin(
-      /angular(\\|\/)core(\\|\/)@angular/,
-      path.join(__dirname, 'src')
+      /**
+       * The (\\|\/) piece accounts for path separators in *nix and Windows
+       */
+      /\@angular(\\|\/)core(\\|\/)esm5/,
+      path.join(__dirname, 'src'), // location of your src
+      {
+        /**
+         * your Angular Async Route paths relative to this root directory
+         */
+      }
     ),
 
     new webpack.NoEmitOnErrorsPlugin()

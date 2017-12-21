@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-3" *ngFor="let plan of plans;let i=index">
+            <div class="panel" [class.panel-primary]="i==0" [class.panel-success]="i==1" [class.panel-info]="i==2">
+                <div class="cnrflash" *ngIf="i==1">
+                    <div class="cnrflash-inner">
+                        <span class="cnrflash-label">MOST
+                            <br>
+                            POPULAR</span>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {{plan.name}}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            {{plan.pricing | currency:'USD':'symbol-narrow'}}<span class="subscript">{{plan.billing === 'monthly' ? '/mo':'annual'}}</span></h1>
+                        <small>{{plan.offer}}</small>
+                    </div>
+                    <table class="table table-striped" >
+                        <tr *ngFor="let feature of plan.features">
+                            <td>
+                                <i class="fa fa-times" aria-hidden="true" *ngIf="feature.available === '0'"></i>
+                                <i class="fa fa-check" aria-hidden="true" *ngIf="feature.available !== '0' && feature.description === 'Custom Cloud Service'"></i>
+                                 {{feature.value}} {{feature.description}}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a (click)="selectedPlan(plan)" class="btn" [class.btn-primary]="i==0" [class.btn-success]="i==1" [class.btn-info]="i==2" role="button">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+</a></div>
+            </div>
+        </div>
+    </div>
+</div>

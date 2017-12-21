@@ -17,6 +17,7 @@ Desktop.ini
 
 # Mac
 .DS_Store
+*.tgz
 
 # Temporary files
 coverage/

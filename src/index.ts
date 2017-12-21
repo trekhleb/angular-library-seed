@@ -1,3 +1,34 @@
 export { TickTockService } from './services';
-export { TickTockComponent } from './components';
-export { TickTockModule } from './tick-tock.module';
+export {
+    TickTockComponent,
+    NavBarComponent,
+    FooterComponent,
+    AboutComponent,
+    PlanDetailsComponent,
+    PlanOptionsComponent,
+    OrderDetailsComponent,
+    CartComponent,
+    CartTotalComponent,
+    NoContentComponent,
+    RegisterFormComponent
+} from './components';
+export {
+    NavLinks,
+    ShoppingCart,
+    LineItem,
+    Feature,
+    FeatureAvailability,
+    FeatureMap,
+    User,
+    Address,
+    Order,
+    Plan
+} from './models';
+
+export {
+    TickTockModule,
+    LayoutModule,
+    OrderDetailsModule,
+    CartModule,
+    RegisterFormModule
+} from './modules';

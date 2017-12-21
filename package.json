@@ -1,7 +1,7 @@
 {
-  "name": "angular-library-seed",
-  "version": "0.0.20",
-  "description": "Angular library seed",
+  "name": "angular-atomic-library",
+  "version": "1.1.0",
+  "description": "Angular Atomic Web Design Sample Library",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -19,18 +19,15 @@
     "tick-tock",
     "typescript"
   ],
-  "author": {
-    "name": "Oleksii Trekhleb",
-    "url": "https://www.linkedin.com/in/trekhleb/"
-  },
+  "author": "tsukhu (https://www.linkedin.com/in/tsukhu/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trekhleb/angular-library-seed.git"
+    "url": "git+https://github.com/ERS-HCL/angular-atomic-library.git"
   },
   "bugs": {
-    "url": "https://github.com/trekhleb/angular-library-seed/issues"
+    "url": "https://github.com/ERS-HCL/angular-atomic-library/issues"
   },
-  "homepage": "https://github.com/trekhleb/angular-library-seed#readme",
+  "homepage": "https://github.com/ERS-HCL/angular-atomic-library#readme",
   "scripts": {
     "build": "npm run build:esm && npm run build:umd",
     "build:esm": "gulp inline-templates && npm run ngcompile",
@@ -46,7 +43,7 @@
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "gh-pages": "rimraf docs && npm run docs && gh-pages -d docs",
     "lint": "npm run tslint 'src/**/*.ts'",
-    "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
+    "ngcompile": "ngc -p tsconfig-aot.json",
     "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp",
@@ -56,26 +53,31 @@
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "peerDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/core": "^4.0.0"
+    "@angular/common": "~5.1.0",
+    "@angular/core": "~5.1.0"
   },
   "devDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@compodoc/compodoc": "^1.0.0-beta.9",
+    "@angular/common": "~5.1.0",
+    "@angular/compiler": "~5.1.0",
+    "@angular/compiler-cli": "~5.1.0",
+    "@angular/core": "~5.1.0",
+    "@angular/forms": "~5.1.0",
+    "@angular/router": "~5.1.0",
+    "@angular/platform-browser": "~5.1.0",
+    "@angular/platform-browser-dynamic": "~5.1.0",
+    "@compodoc/compodoc": "^1.0.0-beta.15",
     "@types/jasmine": "^2.5.47",
     "@types/karma": "^1.7.0",
+    "@types/lodash": "^4.14.79",
     "@types/node": "^8.0.0",
     "@types/webpack": "^3.0.13",
     "@types/webpack-env": "^1.13.0",
     "angular2-template-loader": "^0.6.2",
-    "awesome-typescript-loader": "^3.1.3",
+    "awesome-typescript-loader": "^3.3.0",
     "codecov": "^2.2.0",
     "codelyzer": "^3.0.1",
     "concurrently": "^3.4.0",
@@ -96,16 +98,16 @@
     "node-sass": "^4.5.2",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
-    "rxjs": "^5.3.1",
+    "rxjs": "^5.5.2",
     "sass-loader": "^6.0.5",
     "source-map-explorer": "^1.3.3",
     "to-string-loader": "^1.1.5",
-    "ts-node": "^3.0.4",
+    "ts-node": "^3.3.0",
     "tslint": "^5.2.0",
-    "typescript": "^2.3.2",
-    "webpack": "^3.6.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.8.1",
     "webpack-angular-externals": "^1.0.2",
     "webpack-rxjs-externals": "^1.0.0",
-    "zone.js": "^0.8.10"
+    "zone.js": "^0.8.18"
   }
 }

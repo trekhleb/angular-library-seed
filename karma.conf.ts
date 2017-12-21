@@ -65,6 +65,7 @@ export default (config) => {
     },
 
     singleRun: true,
+    browserNoActivityTimeout: 60000,
     colors: true
   } as ConfigOptions);
 };
