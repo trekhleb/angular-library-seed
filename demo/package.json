@@ -22,25 +22,25 @@
     "start": "concurrently --raw \"gulp copy-lib:watch\" \"webpack-dev-server --open --watch --config esm/webpack.config.js\""
   },
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0"
+    "@angular/common": "~5.1.0",
+    "@angular/core": "~5.1.0",
+    "@angular/platform-browser": "~5.1.0",
+    "@angular/platform-browser-dynamic": "~5.1.0"
   },
   "devDependencies": {
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "awesome-typescript-loader": "^3.1.2",
+    "@angular/compiler": "~5.1.0",
+    "@angular/compiler-cli": "~5.1.0",
+    "awesome-typescript-loader": "^3.3.0",
     "concurrently": "^3.4.0",
     "copyfiles": "^1.2.0",
     "core-js": "^2.4.1",
     "gulp": "^3.9.1",
     "html-webpack-plugin": "^2.8.1",
     "rimraf": "^2.6.1",
-    "rxjs": "^5.2.0",
-    "typescript": "^2.2.0",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.4.5",
-    "zone.js": "^0.8.4"
+    "rxjs": "^5.5.2",
+    "typescript": "^2.5.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "~2.7.1",
+    "zone.js": "^0.8.18"
   }
 }
