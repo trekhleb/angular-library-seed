@@ -61,8 +61,16 @@ export default {
     }),
 
     new webpack.ContextReplacementPlugin(
-      /angular(\\|\/)core(\\|\/)@angular/,
-      path.join(__dirname, 'src')
+      /**
+       * The (\\|\/) piece accounts for path separators in *nix and Windows
+       */
+      /\@angular(\\|\/)core(\\|\/)esm5/,
+      path.join(__dirname, 'src'), // location of your src
+      {
+        /**
+         * your Angular Async Route paths relative to this root directory
+         */
+      }
     ),
 
     new webpack.NoEmitOnErrorsPlugin()
