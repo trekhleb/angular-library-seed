@@ -55,9 +55,16 @@ const config = {
      * @see: https://github.com/angular/angular/issues/11580
      */
     new webpack.ContextReplacementPlugin(
-      /angular(\\|\/)core(\\|\/)@angular/,
-      path.resolve(__dirname, 'src'),
-      {}
+      /**
+       * The (\\|\/) piece accounts for path separators in *nix and Windows
+       */
+      /\@angular(\\|\/)core(\\|\/)esm5/,
+      path.join(__dirname, 'src'), // location of your src
+      {
+        /**
+         * your Angular Async Route paths relative to this root directory
+         */
+      }
     ),
 
     /*
